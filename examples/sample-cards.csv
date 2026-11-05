@@ -1,0 +1,6 @@
+front,back,notes,tags
+"Postgres: what does a filtered query do when no index applies?","A sequential scan of the whole table.","","databases::indexes postgres"
+"Why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","Learner's first answer was 'no idea'; reached it from one hint.","databases::indexes writes"
+"Index on (a, b): is a filter on b alone served well?","Usually not: the leading column a drives the lookup.","","databases::indexes composite"
+"A column has only 2 distinct values: is an index on it usually a win?","Usually not: low selectivity, the planner often prefers a scan.","","databases::indexes selectivity"
+"What does EXPLAIN ANALYZE show that EXPLAIN does not?","Actual run times and row counts, because it executes the query.","","databases::indexes explain"

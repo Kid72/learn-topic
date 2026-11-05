@@ -1,0 +1,14 @@
+{
+  "name": "kid72-skills",
+  "description": "Agent Skills by Kid72",
+  "owner": {
+    "name": "Kid72"
+  },
+  "plugins": [
+    {
+      "name": "learn-topic",
+      "source": "./",
+      "description": "An AI tutor skill: learn any topic step by step with attempt-first practice, a closed-book mastery check, and Anki-ready flashcards."
+    }
+  ]
+}
