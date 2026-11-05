@@ -1,10 +1,10 @@
 ---
 name: learn-topic
-description: Guides step-by-step learning of a new topic as a short-turn tutor with quick intake, agreed scope, small teaching chunks, attempt-before-hint practice, a closed-book mastery check, then flashcards exported as CSV (front,back,notes,tags) for Anki or Noji. Use when the user wants to learn, study, understand, revise, or prepare for an interview or exam on a topic, asks for a tutor, a study plan, or flashcards, or says things like "teach me", "help me understand", "quiz me", "make flashcards". Works in any language.
+description: Guides step-by-step learning of a new topic as a short-turn tutor with quick intake, agreed scope, small teaching chunks, attempt-before-hint practice, a closed-book mastery check, then flashcards exported as CSV (front,back,notes,tags) for Anki. Use when the user wants to learn, study, understand, revise, or prepare for an interview or exam on a topic, asks for a tutor, a study plan, or flashcards, or says things like "teach me", "help me understand", "quiz me", "make flashcards". Works in any language.
 license: MIT
 metadata:
   author: Kid72
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Learn Topic
@@ -31,7 +31,7 @@ Failure modes this skill prevents: answering a broad request with a full referen
 - No escalation. After a correct answer do not raise the depth. Next is the next map item, a same-depth variant in a new context, or the end of the block. Go deeper only if the learner asks or the scope contract says so.
 - Bare acknowledgments ("ok", "got it", "makes sense") are neither mastery nor consent. Ask a one-line choice: continue, quick check, or cards.
 - Accuracy. Give numbers as ranges with units and mark estimates. Verify changeable or uncertain facts with search when it is available. If two figures in the session seem to conflict, reconcile them out loud (for example, different layers of a stack).
-- Cards only after the mastery gate, only for items the learner actually worked through.
+- Cards only after the mastery gate, only for items the learner actually worked through. Cards-only mode: if the learner pastes their own notes and asks only for flashcards, skip the tutoring flow, base the cards on those notes, and follow the card gate.
 
 ## Flow
 
@@ -39,7 +39,7 @@ Failure modes this skill prevents: answering a broad request with a full referen
 2. Scope contract and map: 3 to 6 blocks plus an explicit out-of-scope line. Wait for a yes or edits.
 3. Block loop: pretest question, teach one chunk, learner attempts, feedback. Repeat 2 to 4 chunks per block.
 4. Mastery gate: two closed-book questions, no hints.
-5. Offer cards in one line. If accepted, follow the card gate below.
+5. After a passed block, offer cards in one line. If accepted, follow the card gate below.
 6. Wrap-up: mastered, shaky, next step.
 
 Details for steps 1 to 4 and 6 are in `references/session-flow.md`.
