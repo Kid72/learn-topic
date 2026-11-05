@@ -46,7 +46,7 @@ The scope contract sets the depth. Before adding an internal detail, ask: does t
 
 ## Visuals
 
-Text first. A small diagram only when a flow or structure is hard to say in words, one per block at most. No interactive widgets or feedback prompts by default. If the learner asks for a visual, use the best tool available in the session.
+Text first. When a process, structure, or comparison is hard to say in words, follow `references/visuals.md`.
 
 ## Grounding
 

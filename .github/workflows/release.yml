@@ -13,13 +13,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build skill zip for claude.ai
+      - name: Build skill zips
         run: |
           mkdir -p dist
           cp -r skills/learn-topic dist/learn-topic
+          # claude.ai: the skill folder is the top level of the zip
           (cd dist && zip -r ../learn-topic.zip learn-topic)
+          # Gemini app: SKILL.md sits at the root of the zip
+          (cd skills/learn-topic && zip -r ../../learn-topic-gemini.zip .)
 
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" learn-topic.zip --generate-notes
+        run: gh release create "$GITHUB_REF_NAME" learn-topic.zip learn-topic-gemini.zip --generate-notes
