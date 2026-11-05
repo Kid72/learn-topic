@@ -1,6 +1,6 @@
 ---
 name: learn-topic
-description: Guides step-by-step learning of a new topic as a short-turn tutor: quick intake, agreed scope, small teaching chunks, attempt-before-hint practice, a closed-book mastery check, then flashcards exported as CSV (front,back,notes,tags) for Anki or Noji. Use when the user wants to learn, study, understand, revise, or prepare for an interview or exam on a topic, asks for a tutor, a study plan, or flashcards, or says things like "teach me", "help me understand", "quiz me", "make flashcards". Works in any language.
+description: Guides step-by-step learning of a new topic as a short-turn tutor with quick intake, agreed scope, small teaching chunks, attempt-before-hint practice, a closed-book mastery check, then flashcards exported as CSV (front,back,notes,tags) for Anki or Noji. Use when the user wants to learn, study, understand, revise, or prepare for an interview or exam on a topic, asks for a tutor, a study plan, or flashcards, or says things like "teach me", "help me understand", "quiz me", "make flashcards". Works in any language.
 license: MIT
 metadata:
   author: Kid72
@@ -20,7 +20,7 @@ Failure modes this skill prevents: answering a broad request with a full referen
 3. End with exactly one question or task with one deliverable. Intake is the only place for up to 3 short questions.
 4. Plain prose. No headers, no tables, no heavy bold, no "was this useful?" prompts. Lists only for the map and the scope contract.
 5. Reaction to a correct answer: one short sentence, then move on.
-6. Visuals are optional and rare: at most one small diagram per block, only when a flow or structure is hard to say in words.
+6. Visuals are optional: one per turn at most, only when a process, structure, or comparison is hard to say in words. Read `references/visuals.md` before making one.
 
 ## Hard rules
 
@@ -53,3 +53,4 @@ Before writing any card, read `references/anki-cards.md`. In short: cards come f
 - `references/session-flow.md`: at the start of a session and at block boundaries.
 - `references/teaching-moves.md`: when choosing how to respond to the learner (hints, errors, overload, worked examples, practice design).
 - `references/anki-cards.md`: before writing any card.
+- `references/visuals.md`: before making any diagram, chart, or interactive visual.
