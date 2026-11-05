@@ -7,7 +7,7 @@ labels: bug
 
 **Topic you were learning**
 
-**Agent and version** (Claude Code, claude.ai, Codex, Gemini CLI, other)
+**Agent and version** (Claude Code, claude.ai, Codex, Antigravity, other)
 
 **What you typed**
 

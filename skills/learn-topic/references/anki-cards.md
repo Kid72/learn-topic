@@ -1,8 +1,8 @@
-# Flashcards for Anki or Noji
+# Flashcards for Anki
 
 ## When
 
-Only after the mastery gate and a clear yes from the learner (or an explicit request for cards). Only for items the learner worked through. Never a summary of the textbook or of your own explanation.
+Only after the mastery gate and a clear yes from the learner (or an explicit cards-only request with the learner's own notes). Only for items the learner worked through or supplied. Never a summary of the textbook or of your own explanation.
 
 ## Where cards come from (in priority order)
 
@@ -47,7 +47,7 @@ Numbers in these examples only illustrate the format; use the figures from the a
 - `tags`: lowercase, separated by spaces, no spaces inside a tag, never commas. Use `::` for hierarchy, for example `system_design::numbers latency`.
 - `notes`: up to 25 words, usually empty or one line: what happened in the session (the learner's slip, their analogy) or a one-line reason. Empty is fine: `""`.
 - Language: the learner's language for front, back and notes, with established technical terms kept in their original form.
-- At most 6 cards per block and 12 per session unless asked. No duplicates.
+- At most 6 cards per block unless the learner asks for more. No duplicates.
 
 ## Finish
 

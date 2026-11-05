@@ -1,6 +1,6 @@
 # The research behind the method
 
-Each step of the workflow maps to a technique with published evidence. The table says what each source found and where `learn-topic` uses it.
+Most steps of the workflow map to a technique with published evidence. The table says what each source found and where `learn-topic` uses it. The rules that have no study behind them are listed at the end as design choices.
 
 | Idea | Where it shows up | What the source found |
 | :--- | :--- | :--- |
@@ -17,3 +17,13 @@ Each step of the workflow maps to a technique with published evidence. The table
 - The **cards** carry the material into spaced review, scheduled by Anki.
 - The **hint ladder** keeps the thinking on your side, which is the difference between the plain and tutor-style conditions in the Bastani study.
 - The **scope contract** and the 120-word turn limit keep each step small enough to attempt.
+
+## Design choices
+
+These rules are the author's decisions for keeping a chat tutor usable, not findings from a study. Change them if your sessions call for it.
+
+- **120 words per turn and one question per turn.** Keeps each step small enough to attempt.
+- **No escalation after a correct answer.** The depth is set once in the scope contract, so the session does not drift past the goal.
+- **Two questions in the mastery gate**, one of them from an earlier block after the first block.
+- **Up to 6 cards per block.** Keeps the deck small enough to actually review.
+- **Self-quiz after 1 day, 1 week, and 1 month** when there are no cards. The gaps follow the spacing idea from Cepeda et al., but the exact numbers are a convention.

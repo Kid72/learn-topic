@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-11-05
+
+### Changed
+- New banner and social preview.
+- Example cards now follow the card checklist: no yes/no questions, a domain prefix on every front.
+- Sample session matches the rules: two-question gate, plan and ending consistent.
+- Added a cards-only mode for learners who bring their own notes.
+- Answering "ok" or "got it" now follows one rule across the skill files.
+- Documented which rules are design choices in `docs/research.md`.
+
 ## [1.0.0] - 2026-11-05
 
 ### Added
