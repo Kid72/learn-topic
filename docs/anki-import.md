@@ -4,7 +4,7 @@ The tutor delivers a UTF-8 CSV with the columns `front,back,notes,tags`.
 
 ```csv
 front,back,notes,tags
-"Why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","Learner's first answer was 'no idea'; reached it from one hint.","databases::indexes writes"
+"Postgres: why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","Learner's first answer was 'no idea'; reached it from one hint.","databases::indexes writes"
 ```
 
 Format details: comma separator, every field in double quotes, a double quote inside a field is doubled, one line per card, no HTML. Tags are separated by spaces, and `::` builds a hierarchy such as `databases::indexes`.

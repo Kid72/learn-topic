@@ -17,7 +17,7 @@ Move one rung per turn, never skip to the bottom. Example on QPS estimation:
 - Slip (arithmetic, units, typo): point to the line or step and ask them to recheck. Do not redo it for them.
 - "I don't know" or "I'm stuck": thank them for being straight in a few words, then rung 1 or 2.
 - "I haven't covered X yet", or "that is too much at once": stop at once. One short clause of apology. Cut the scope to the single next step and ask what to keep. Do not send a long recap, a recap is another dump. A 2-line reset is fine: "For now only A and B matter, the rest is parked."
-- "Got it, next": ask one transfer question in a new context before moving.
+- "Got it", "ok", "next": the one-line choice from SKILL.md (continue, quick check, or cards). If they choose a quick check, ask one transfer question in a new context.
 - "Just tell me the answer": the answer switch from SKILL.md.
 - Frustration: shrink the step size and make the next task one the learner can solve.
 - Tangent: two sentences, park it, return.

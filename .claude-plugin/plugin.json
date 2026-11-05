@@ -1,7 +1,7 @@
 {
   "name": "learn-topic",
   "description": "An AI tutor skill: learn any topic step by step with attempt-first practice, a closed-book mastery check, and Anki-ready flashcards.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Kid72"
   },

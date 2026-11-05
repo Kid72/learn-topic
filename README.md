@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.png" alt="learn-topic: Stop reading answers. Start learning. An AI tutor skill built on published learning research: Dunlosky 2013 (closed-book gate), Richland 2009 (pretest), Kestin 2025 (small chunks), Bastani 2025 (hint ladder), Cepeda 2008 (spaced review), Wozniak 20 rules (Anki cards). Works with Claude Code, Claude.ai, Codex, Antigravity, Gemini app, and any agent that reads SKILL.md. MIT." width="100%">
+  <img src="assets/hero.png" alt="learn-topic: Don't read the answer. Work it out. A tutor asks a question, you guess, and the session ends with a flashcard built from your own mistake." width="100%">
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@ An Agent Skill that turns your AI assistant into a patient tutor. It explains in
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-C2410C"></a>
   <a href="https://github.com/Kid72/learn-topic/releases"><img alt="Latest release" src="https://img.shields.io/github/v/release/Kid72/learn-topic?color=1F1B16"></a>
   <a href="https://agentskills.io"><img alt="Format: Agent Skills" src="https://img.shields.io/badge/format-Agent%20Skills-6B6256"></a>
-  <img alt="Exports Anki CSV" src="https://img.shields.io/badge/exports-Anki%20CSV-6B6256">
+  <img alt="Exports Anki CSV" src="https://img.shields.io/badge/cards-Anki%20CSV-6B6256">
 </p>
 
 ## Try it
@@ -22,6 +22,20 @@ Teach me how database indexes work. I have a backend interview in two weeks.
 ```
 
 Any topic works: a framework, a protocol, a certification, a chapter you are stuck on. Write in your language and the tutor replies in it.
+
+## A taste of a session
+
+> **Tutor:** Before I explain anything: a table has 10 million rows and you filter by `email` with no index. Roughly, what does the database have to do? A wrong guess is fine.
+>
+> **You:** Check every row?
+>
+> **Tutor:** Yes, a full scan. An index is a sorted lookup structure. Now you: you add an index on `email`. Name one cost you now pay on every INSERT.
+>
+> **You:** No idea.
+>
+> **Tutor:** Hint: when a new row arrives, where else does its email value have to go?
+
+The full session is in [examples/sample-session.md](examples/sample-session.md).
 
 ## Install
 
@@ -52,26 +66,13 @@ A skill is plain-text instructions your agent follows, so read `skills/learn-top
 
 ## How it works
 
-Each step is tied to published research or marked as a design choice. Sources and what each one found: [docs/research.md](docs/research.md).
+The method combines techniques with published evidence (practice testing, pretesting, spaced review, hints over answers) and a few design choices that keep turns short. Sources and what each one found: [docs/research.md](docs/research.md).
 
 - **Quick intake, agreed scope.** The tutor asks about your goal, level, and deadline, then shows a map with what is out of scope. You confirm before anything is taught.
 - **You try first.** A guess comes before any hint, and hints come as a ladder, one rung per turn. Say "just tell me" at any point and you get the answer plus a twin task.
 - **Short turns.** At most 120 words and exactly one question or task.
 - **A closed-book check** decides when you move on. "ok" is not mastery.
 
-## A taste of a session
-
-> **Tutor:** Before I explain anything: a table has 10 million rows and you filter by `email` with no index. Roughly, what does the database have to do? A wrong guess is fine.
->
-> **You:** Check every row?
->
-> **Tutor:** Yes, a full scan. An index is a sorted lookup structure. Now you: you add an index on `email`. Name one cost you now pay on every INSERT.
->
-> **You:** No idea.
->
-> **Tutor:** Hint: when a new row arrives, where else does its email value have to go?
-
-The full session is in [examples/sample-session.md](examples/sample-session.md).
 
 ## Flashcards worth reviewing
 
@@ -79,8 +80,8 @@ After you pass a block, the tutor offers cards. They come from your slips and he
 
 ```csv
 front,back,notes,tags
-"Why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","Learner's first answer was 'no idea'; reached it from one hint.","databases::indexes writes"
-"Index on (a, b): is a filter on b alone served well?","Usually not: the leading column a drives the lookup.","","databases::indexes composite"
+"Postgres: why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","Learner's first answer was 'no idea'; reached it from one hint.","databases::indexes writes"
+"Postgres, index on (a, b): which filter column can use it alone?","Only a, the leading column; a filter on b alone usually cannot.","","databases::indexes composite"
 ```
 
 A full file is in [examples/sample-cards.csv](examples/sample-cards.csv). Import steps: [docs/anki-import.md](docs/anki-import.md).
@@ -104,7 +105,7 @@ Yes. The tutor replies in the language of your latest message and switches when 
 <details>
 <summary><strong>Does it run code or send data anywhere?</strong></summary>
 
-The skill is Markdown instructions with no scripts. Everything it does happens inside your agent.
+The skill is Markdown instructions with no scripts, and it sends nothing anywhere itself. Everything happens inside your agent: the chat, and the CSV file it writes. If you ask for a diagram or an interactive visual, the agent makes it with its own tools, as in any chat.
 
 </details>
 
