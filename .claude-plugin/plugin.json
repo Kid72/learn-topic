@@ -1,7 +1,7 @@
 {
   "name": "learn-topic",
-  "description": "An AI tutor skill: learn any topic step by step with attempt-first practice, a closed-book mastery check, and Anki-ready flashcards.",
-  "version": "1.0.1",
+  "description": "An AI tutor skill: learn any topic step by step with attempt-first practice, a closed-book mastery check, Anki-ready flashcards, and a study note for Notion.",
+  "version": "1.1.0",
   "author": {
     "name": "Kid72"
   },
@@ -14,6 +14,7 @@
     "anki",
     "flashcards",
     "spaced-repetition",
+    "notion",
     "education"
   ],
   "icon": "assets/icon.png"

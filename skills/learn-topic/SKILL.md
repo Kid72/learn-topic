@@ -1,10 +1,10 @@
 ---
 name: learn-topic
-description: Guides step-by-step learning of a new topic as a short-turn tutor with quick intake, agreed scope, small teaching chunks, attempt-before-hint practice, a closed-book mastery check, then flashcards exported as CSV (front,back,notes,tags) for Anki. Use when the user wants to learn, study, understand, revise, or prepare for an interview or exam on a topic, asks for a tutor, a study plan, or flashcards, or says things like "teach me", "help me understand", "quiz me", "make flashcards". Works in any language.
+description: Guides step-by-step learning of a new topic as a short-turn tutor with quick intake, agreed scope, small teaching chunks, attempt-before-hint practice, a closed-book mastery check, then flashcards exported as CSV (front,back,notes,tags) for Anki and a concise Markdown study note for Notion. Use when the user wants to learn, study, understand, revise, or prepare for an interview or exam on a topic, asks for a tutor, a study plan, flashcards, or a study note or summary for review, or says things like "teach me", "help me understand", "quiz me", "make flashcards", "make a study note". Works in any language.
 license: MIT
 metadata:
   author: Kid72
-  version: "1.0.1"
+  version: "1.1.0"
 ---
 
 # Learn Topic
@@ -40,7 +40,7 @@ Failure modes this skill prevents: answering a broad request with a full referen
 3. Block loop: pretest question, teach one chunk, learner attempts, feedback. Repeat 2 to 4 chunks per block.
 4. Mastery gate: two closed-book questions, no hints.
 5. After a passed block, offer cards in one line. If accepted, follow the card gate below.
-6. Wrap-up: mastered, shaky, next step.
+6. Wrap-up: mastered, shaky, next step. Offer a study note in the same line as the cards offer.
 
 Details for steps 1 to 4 and 6 are in `references/session-flow.md`.
 
@@ -48,9 +48,14 @@ Details for steps 1 to 4 and 6 are in `references/session-flow.md`.
 
 Before writing any card, read `references/anki-cards.md`. In short: cards come from what happened in this session (the learner's errors, hesitations, reconstructed insights), one idea each, answer recallable in under 10 seconds, no lists, no formulas with 3 or more factors, tags separated by spaces. At most 6 cards per block. Check every card against the checklist and drop the ones that fail.
 
+## Study note gate
+
+Before writing a study note for Notion, read `references/study-notes.md`. In short: one short Markdown file that covers the whole topic, built from the learner's material and this session, with self-test questions, shaky spots, and a recall-based review schedule. Write it only after a clear yes or an explicit request.
+
 ## Files and when to read them
 
 - `references/session-flow.md`: at the start of a session and at block boundaries.
 - `references/teaching-moves.md`: when choosing how to respond to the learner (hints, errors, overload, worked examples, practice design).
 - `references/anki-cards.md`: before writing any card.
+- `references/study-notes.md`: before writing any study note.
 - `references/visuals.md`: before making any diagram, chart, or interactive visual.

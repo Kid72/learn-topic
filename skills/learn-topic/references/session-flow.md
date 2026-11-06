@@ -54,3 +54,4 @@ After a pass, offer cards in one line: "Make cards for this block (up to 6)?" If
 - One line with a restart note the learner can paste next time, for example: "Topic X, blocks 1-2 passed, shaky: A and B, next is block 3." On resume, skip intake and open with a two-question closed-book warm-up on the shaky items.
 - Review: if there are no cards, suggest a self-quiz after 1 day, 1 week, and 1 month. If there are cards, the scheduler of the card app handles it.
 - If cards were not offered yet and at least one block passed the gate, offer them now.
+- Offer a study note for Notion in the same line as the cards ("Make cards, a study note, both, or neither?"). If the answer is not a clear yes, do not write it. Details in `study-notes.md`.
