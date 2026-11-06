@@ -10,7 +10,7 @@ The tutor writes a Markdown file named like `database-indexes-notes.md`.
 
 ## What the note uses
 
-Headings, short paragraphs, bullets and numbered lists, bold and inline code, fenced code blocks, plain links, one small comparison table, and a `- [ ]` checklist for the review schedule. Notion documents Markdown import for headings, lists, and code blocks, and says nonstandard extensions may not import cleanly. The table and the checklist can arrive as plain text on your workspace. The note reads fine either way, because every answer sits on the line below its question.
+Headings, short paragraphs, bullets and numbered lists, bold and inline code, fenced code blocks, plain links, one small comparison table, and a `- [ ]` checklist for the review schedule. Notion documents Markdown import for headings, lists, and code blocks, and says nonstandard extensions may not import cleanly. Depending on your Notion version, the table and the checklist may show up as plain text. The note reads fine either way, because every answer is its own `Answer:` paragraph right below its question.
 
 ## Hide the answers
 

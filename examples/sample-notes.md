@@ -4,7 +4,7 @@ Cover the answers and try first. Feeling fluent while the answer is visible is n
 
 ## Overview
 
-An index is a sorted lookup structure that lets Postgres jump to matching rows instead of reading the whole table. The big idea is a trade: faster reads for slower writes and extra storage. Whether the trade pays off depends on which columns you index (composite order) and how well a filter narrows the rows (selectivity), and `EXPLAIN` shows what the planner actually chose.
+An index is a sorted lookup structure that lets Postgres jump to matching rows instead of reading the whole table. The big idea is a trade: faster reads for slower writes. Whether it pays off depends on column order and on selectivity, and `EXPLAIN` shows what the planner chose.
 
 ## Key ideas
 
@@ -18,7 +18,7 @@ An index is a sorted lookup structure that lets Postgres jump to matching rows i
 
 - Every INSERT updates the table and each index on it.
 - A table with five indexes does six writes per insert, so write-heavy workloads slow down as indexes are added.
-- Rule of thumb: add an index for a read pattern you actually have, not by default.
+- Rule of thumb (outside the session): add an index for a read pattern you actually have, not by default.
 
 ### 3. Composite indexes
 
@@ -50,26 +50,32 @@ Partial indexes, which cover only some rows, are another way to cut index size (
 ## Shaky spots from this session
 
 - Write cost (idea 2): the first answer was "no idea"; one hint got you to "the value also goes into the index". Retry it from memory.
-- Composite order (idea 3): only guessed at once in the session, not yet confirmed on your own queries. Test it with `EXPLAIN ANALYZE`.
+- Composite order (idea 3): you made a guess in the session but did not check it on a real query. Test it with `EXPLAIN ANALYZE`.
 
 ## Self-test
 
-1. A table has 10 million rows and no index on `email`. What does a filter on `email` cost, and what does an index change?
-Answer: A full sequential scan reads every row; the index lets the database jump to the matching rows.
+1. Why does adding an index slow down INSERTs, and what happens on a write-heavy table with five indexes?
 
-2. Why does adding an index slow down INSERTs?
-Answer: Each insert must also update every index on the table.
+Answer: Each insert must also update every index on the table, so a table with five indexes does six writes per insert and write throughput drops.
 
-3. A table has five indexes and a write-heavy workload. What happens to write throughput, and why?
-Answer: It drops, because each insert updates the table plus five indexes.
+2. You have an index on `(country, city)`. Why can it fail to help a filter on `city` alone?
 
-4. You have an index on `(country, city)`. Why can it fail to help a filter on `city` alone?
 Answer: The index is ordered by `country` first, so without the leading column the sorted order does not help.
 
+3. You run `WHERE city = 'Berlin'` on a table that only has the `(country, city)` index. What will `EXPLAIN` most likely show?
+
+Answer: A sequential scan, because the leading column is missing from the filter.
+
+4. A table has 10 million rows and no index on `email`. What does a filter on `email` cost, and what does an index change?
+
+Answer: A full sequential scan reads every row; the index lets the database jump to the matching rows.
+
 5. Why is an index on a 2-value column rarely used?
+
 Answer: Low selectivity: the filter returns a large share of the table, so the planner usually prefers a full scan.
 
 6. What does `EXPLAIN ANALYZE` show that `EXPLAIN` does not, and what is the catch?
+
 Answer: Actual run times and row counts, because it executes the query, so it really runs any write it contains.
 
 ## Your turn

@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-An Agent Skill that turns your AI assistant into a patient tutor. It explains in small steps, makes you try first, checks you with a closed-book test, and ends with flashcards built from your own mistakes and a one-page study note for Notion.
+An Agent Skill that turns your AI assistant into a patient tutor. It explains in small steps, makes you try first, checks you with a closed-book test, and ends with flashcards built from your own mistakes and a short study note for Notion.
 </p>
 
 <p align="center">
@@ -105,7 +105,7 @@ No. Cards are an optional last step, offered only after you pass a block. Declin
 <details>
 <summary><strong>Do I need Notion?</strong></summary>
 
-No. The note is a plain Markdown file, so any Markdown editor opens it. It is written to import cleanly into Notion.
+No. The note is a plain Markdown file, so any Markdown editor opens it. Notion can import it.
 
 </details>
 

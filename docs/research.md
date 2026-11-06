@@ -17,12 +17,9 @@ The study note for Notion follows a few findings and keeps the rest as design ch
 
 | Idea | Where it shows up | What the source found |
 | :--- | :--- | :--- |
-| Review by recall, not rereading | Self-test questions with answers on the next line, review schedule | [Dunlosky et al. 2013](https://www.psychologicalscience.org/news/releases/which-study-strategies-make-the-grade.html) rated practice testing as high-utility and rereading and summarization as low-utility. |
-| Learners' own generation | A "Your turn" section left empty for the learner | [Fiorella and Mayer 2016](https://eric.ed.gov/?id=EJ1120458) review generative strategies such as summarizing, mapping, and self-explaining. A 2025 study of AI-supported note-taking ([Chen et al.](https://arxiv.org/pdf/2509.03392)) reports that more AI assistance reduced cognitive engagement. |
-| Delayed gist | A keywords-from-memory step at the second review | [Thiede and Anderson 2003](https://experts.boisestate.edu/en/publications/summarizing-can-improve-metacomprehension-accuracy/) found that summarizing can improve how accurately learners judge their own comprehension. |
+| Review by recall, not rereading | Self-test questions with answers below them, review schedule | [Dunlosky et al. 2013](https://doi.org/10.1177/1529100612453266) rated practice testing as high-utility and rereading and summarization as low-utility. |
+| The learner's own generation | A "Your turn" section left empty for the learner | [Fiorella and Mayer 2016](https://eric.ed.gov/?id=EJ1120458) review generative strategies such as summarizing, mapping, and self-explaining. A 2025 preprint on AI-supported note-taking ([Chen et al.](https://arxiv.org/pdf/2509.03392)) studies how AI assistance affects cognitive engagement. |
 | Typing or handwriting matters little | No rule on medium; the note is a review tool | [Morehead, Dunlosky, and Rawson 2019](https://www.learningscientists.org/blog/2019/2/21-1) and [Urry et al. 2021](https://doi.org/10.1177/0956797620965541) report that the pen-over-keyboard result of Mueller and Oppenheimer 2014 did not replicate. |
-| Maps and tables where content fits | One comparison table, only for real comparisons | [Nesbit and Adesope 2006](https://www.sfu.ca/~jcnesbit/research/nesbitadesope2006.htm) is a meta-analysis of concept and knowledge maps. |
-| Making a compact aid builds some memory | The note is built from the session, not copied from a textbook | [Dickson and Bauer 2008](https://experts.nau.edu/en/publications/do-students-learn-course-material-during-crib-sheet-construction/) examined learning during crib sheet construction. |
 
 Notion documents Markdown import for headings, lists, and code blocks, and says nonstandard extensions may not import cleanly ([Notion Help](https://www.notion.com/help/import-data-into-notion)). The note therefore sticks to a small Markdown subset.
 
@@ -32,6 +29,8 @@ No source located gives the best length or structure for a whole-topic note, so 
 
 - About 500 to 800 words, 5 to 8 key ideas, 6 to 10 self-test questions.
 - Review after about 1 day, 1 week, and 3 weeks.
+- Keywords from memory at the second review (inspired by research on delayed summaries such as [Thiede and Anderson 2003](https://experts.boisestate.edu/en/publications/summarizing-can-improve-metacomprehension-accuracy/), which studied judgment accuracy, not memory).
+- One comparison table, only when the topic holds a real comparison. Concept maps ([Nesbit and Adesope 2006](https://www.sfu.ca/~jcnesbit/research/nesbitadesope2006.htm)) are not used in the note.
 - Answers written on the next line so the note works without toggles.
 
 ## How the pieces fit

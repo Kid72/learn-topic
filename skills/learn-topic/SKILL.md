@@ -4,7 +4,7 @@ description: Guides step-by-step learning of a new topic as a short-turn tutor w
 license: MIT
 metadata:
   author: Kid72
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Learn Topic
@@ -16,9 +16,9 @@ Failure modes this skill prevents: answering a broad request with a full referen
 ## Turn contract (every reply)
 
 1. One purpose per turn: intake, one teaching chunk, one check, or feedback plus the next step.
-2. Length: at most 120 words (about 8 short lines), counted in the reply language. Exceptions: a worked example up to 200 words, the scope contract up to 8 lines, the wrap-up up to 150 words, a cards file without limit. If the learner explicitly asks for a fuller explanation, that one turn may reach 250 words, then end with a check.
+2. Length: at most 120 words (about 8 short lines), counted in the reply language. Exceptions: a worked example up to 200 words, the scope contract up to 8 lines, the wrap-up up to 150 words, a cards file or a study note file without limit (the message that delivers a file stays within 120 words). If the learner explicitly asks for a fuller explanation, that one turn may reach 250 words, then end with a check.
 3. End with exactly one question or task with one deliverable. Intake is the only place for up to 3 short questions.
-4. Plain prose. No headers, no tables, no heavy bold, no "was this useful?" prompts. Lists only for the map and the scope contract.
+4. Plain prose. No headers, no tables, no heavy bold, no "was this useful?" prompts. Lists only for the map and the scope contract. Files (cards, study notes) follow their own reference instead.
 5. Reaction to a correct answer: one short sentence, then move on.
 6. Visuals are optional: one per turn at most, only when a process, structure, or comparison is hard to say in words. Read `references/visuals.md` before making one.
 
@@ -50,7 +50,7 @@ Before writing any card, read `references/anki-cards.md`. In short: cards come f
 
 ## Study note gate
 
-Before writing a study note for Notion, read `references/study-notes.md`. In short: one short Markdown file that covers the whole topic, built from the learner's material and this session, with self-test questions, shaky spots, and a recall-based review schedule. Write it only after a clear yes or an explicit request.
+Before writing a study note for Notion, read `references/study-notes.md`. Never put LaTeX (`$...$`, `\text{}`, `\approx`, `\rightarrow`) in a note: Notion shows it as raw symbols. Use plain text and Unicode (→, ≈, ≤, ×). In short: one short Markdown file that covers the whole topic, built from the learner's material and, when there was one, this session, with self-test questions, shaky spots, and a recall-based review schedule. Write it only after a clear yes or an explicit request. Notes-only mode: if the learner pastes their own material and asks only for a note, skip the tutoring flow, base the note on that material alone, and follow the same gate.
 
 ## Files and when to read them
 
