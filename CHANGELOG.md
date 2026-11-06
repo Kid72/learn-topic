@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] - 2026-11-06
+
+### Added
+- Study notes: a concise Markdown note for Notion that covers the whole topic, with key ideas, shaky spots from the session, self-test questions, a "Your turn" section, and a recall-based review schedule. Offered at the wrap-up or on request, and available in notes-only mode for your own material.
+- `references/study-notes.md`, `examples/sample-notes.md`, and `docs/notion-import.md`.
+- Study-note research section and design choices in `docs/research.md`.
+
+### Fixed
+- The release workflow no longer fails when the release for a tag already exists.
+
 ## [1.0.1] - 2026-11-05
 
 ### Changed

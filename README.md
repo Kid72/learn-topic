@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-An Agent Skill that turns your AI assistant into a patient tutor. It explains in small steps, makes you try first, checks you with a closed-book test, and ends with flashcards built from your own mistakes.
+An Agent Skill that turns your AI assistant into a patient tutor. It explains in small steps, makes you try first, checks you with a closed-book test, and ends with flashcards built from your own mistakes and a short study note for Notion.
 </p>
 
 <p align="center">
@@ -72,6 +72,7 @@ The method combines techniques with published evidence (practice testing, pretes
 - **You try first.** A guess comes before any hint, and hints come as a ladder, one rung per turn. Say "just tell me" at any point and you get the answer plus a twin task.
 - **Short turns.** At most 120 words and exactly one question or task.
 - **A closed-book check** decides when you move on. "ok" is not mastery.
+- **Cards and a study note at the end.** Flashcards for Anki, and a short Markdown note for Notion that covers the whole topic.
 
 
 ## Flashcards worth reviewing
@@ -86,12 +87,25 @@ front,back,notes,tags
 
 A full file is in [examples/sample-cards.csv](examples/sample-cards.csv). Import steps: [docs/anki-import.md](docs/anki-import.md).
 
+## A study note for Notion
+
+Ask for it at the wrap-up, or any time: "make a study note". You get one Markdown file, about one to two screens, that covers the whole topic: an overview, 5 to 8 key ideas, the spots that were shaky in your session, self-test questions with the answers on the next line, an empty "Your turn" section for your own words, and a review checklist. Reviews are recall attempts, not rereading.
+
+Import it in Notion via Settings, Import, Text & Markdown. See a complete example in [examples/sample-notes.md](examples/sample-notes.md) and details in [docs/notion-import.md](docs/notion-import.md).
+
 ## FAQ
 
 <details>
 <summary><strong>Do I need Anki?</strong></summary>
 
 No. Cards are an optional last step, offered only after you pass a block. Decline and you get a short wrap-up of what is solid and what is shaky.
+
+</details>
+
+<details>
+<summary><strong>Do I need Notion?</strong></summary>
+
+No. The note is a plain Markdown file, so any Markdown editor opens it. Notion can import it.
 
 </details>
 
@@ -113,6 +127,7 @@ The skill is Markdown instructions with no scripts, and it sends nothing anywher
 
 - [Install options](docs/INSTALL.md)
 - [Importing cards into Anki](docs/anki-import.md)
+- [Importing the study note into Notion](docs/notion-import.md)
 - [The research behind the method](docs/research.md)
 
 Found the tutor misbehaving, or have an idea? Open an [issue](https://github.com/Kid72/learn-topic/issues/new/choose) or read [CONTRIBUTING.md](CONTRIBUTING.md).
