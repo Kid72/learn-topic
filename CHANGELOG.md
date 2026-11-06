@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.1] - 2026-11-06
+
+### Fixed
+- Study notes no longer contain LaTeX. Notion showed `$\approx$` and `\text{}` as raw symbols. The skill now writes plain text and Unicode (→, ≈, ≤, ×) and checks for `$` and backslashes before sending.
+
 ## [1.1.0] - 2026-11-06
 
 ### Added

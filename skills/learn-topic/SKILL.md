@@ -4,7 +4,7 @@ description: Guides step-by-step learning of a new topic as a short-turn tutor w
 license: MIT
 metadata:
   author: Kid72
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Learn Topic
@@ -50,7 +50,7 @@ Before writing any card, read `references/anki-cards.md`. In short: cards come f
 
 ## Study note gate
 
-Before writing a study note for Notion, read `references/study-notes.md`. In short: one short Markdown file that covers the whole topic, built from the learner's material and, when there was one, this session, with self-test questions, shaky spots, and a recall-based review schedule. Write it only after a clear yes or an explicit request. Notes-only mode: if the learner pastes their own material and asks only for a note, skip the tutoring flow, base the note on that material alone, and follow the same gate.
+Before writing a study note for Notion, read `references/study-notes.md`. Never put LaTeX (`$...$`, `\text{}`, `\approx`, `\rightarrow`) in a note: Notion shows it as raw symbols. Use plain text and Unicode (→, ≈, ≤, ×). In short: one short Markdown file that covers the whole topic, built from the learner's material and, when there was one, this session, with self-test questions, shaky spots, and a recall-based review schedule. Write it only after a clear yes or an explicit request. Notes-only mode: if the learner pastes their own material and asks only for a note, skip the tutoring flow, base the note on that material alone, and follow the same gate.
 
 ## Files and when to read them
 

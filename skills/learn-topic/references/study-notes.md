@@ -8,6 +8,13 @@ A short Markdown note that covers the whole topic, so the learner can walk throu
 - Notes-only mode: if the learner pastes their own material and asks only for a note, skip the tutoring flow and base the note on that material alone. There is no session, so write no "shaky spots" claims; offer a placeholder line the learner fills in.
 - A note may be written when the mastery gate was not passed. It must then say so under shaky spots. Never claim the learner has mastered anything.
 
+## Symbols: no LaTeX, ever
+
+A note is pasted into Notion, which shows LaTeX source as raw text. Never write `$...$`, `$$...$$`, `\text{}`, `\approx`, `\rightarrow`, `\leftrightarrow`, or any backslash command. Write math and arrows as plain text or Unicode: `→`, `↔`, `≈`, `≤`, `≥`, `×`, `µs`, `ms`, `2^10`. A formula with units goes in inline code, for example `RTT = 150 ms`.
+
+Bad: `$\approx 150 \text{ ms}$` and `SF $\leftrightarrow$ London`.
+Good: `≈ 150 ms` and `SF ↔ London`.
+
 ## What goes in, in this order
 
 1. Title: the topic, as a level 1 heading. Directly under it one line: "Cover the answers and try first. Feeling fluent while the answer is visible is not proof you know it."
@@ -56,5 +63,5 @@ The format is designed to degrade gracefully. Do not say "works in Notion"; it h
 ## File and message
 
 - Name: `<topic-slug>-notes.md`, lowercase with hyphens, in the same place as a cards file, for example `database-indexes-notes.md`.
-- Before sending, check: every key idea has a question; every question is followed by a blank line and an `Answer:` paragraph; the "Your turn" prompts are empty; no sentence is a repeat; no em dash or en dash.
+- Before sending, check: no `$` and no backslash anywhere; every key idea has a question; every question is followed by a blank line and an `Answer:` paragraph; the "Your turn" prompts are empty; no sentence is a repeat; no em dash or en dash.
 - After writing, one short message in the learner's language, which also ends with exactly one task. For example: "Saved `database-indexes-notes.md`, about 600 words. Import it via Settings, Import, Text & Markdown. Task for tomorrow: cover the answers and try every question first." A note file is an exception to the 120-word limit, like a cards file; the message itself stays within the limit.
