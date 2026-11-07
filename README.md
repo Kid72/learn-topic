@@ -66,11 +66,11 @@ A skill is plain-text instructions your agent follows, so read `skills/learn-top
 
 ## How it works
 
-The method combines techniques with published evidence (practice testing, pretesting, spaced review, hints over answers) and a few design choices that keep turns short. Sources and what each one found: [docs/research.md](docs/research.md).
+The method combines techniques with published evidence (practice testing, pretesting, spaced review, hints over answers) and a few design choices that keep the session easy to follow. Sources and what each one found: [docs/research.md](docs/research.md).
 
 - **Quick intake, agreed scope.** The tutor asks about your goal, level, and deadline, then shows a map with what is out of scope. You confirm before anything is taught.
-- **You try first.** A guess comes before any hint, and hints come as a ladder, one rung per turn. Say "just tell me" at any point and you get the answer plus a twin task.
-- **Short turns.** At most 120 words and exactly one question or task.
+- **Guess, explain, check.** One guess question, then a full explanation of the block, then a short check. "I don't know" gets an explanation, not another question. Say "just tell me" at any point and you get the answer plus a twin task.
+- **No interrogation.** A block is explained in one message, so you are never asked about something you have not read yet.
 - **A closed-book check** decides when you move on. "ok" is not mastery.
 - **Cards and a study note at the end.** Flashcards for Anki, and a short Markdown note for Notion that covers the whole topic.
 

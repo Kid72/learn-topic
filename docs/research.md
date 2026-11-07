@@ -38,14 +38,14 @@ No source located gives the best length or structure for a whole-topic note, so 
 - The **pretest** and the **closed-book gate** are practice testing.
 - The **cards** carry the material into spaced review, scheduled by Anki.
 - The **study note** gives a whole-topic pass that is reviewed by recall.
-- The **hint ladder** keeps the thinking on your side, which is the difference between the plain and tutor-style conditions in the Bastani study.
-- The **scope contract** and the 120-word turn limit keep each step small enough to attempt.
+- The **hint ladder** (used after a wrong attempt, not after "I don't know") keeps the thinking on your side, which is the difference between the plain and tutor-style conditions in the Bastani study.
+- The **scope contract** and the one-block-per-explanation rhythm keep each step small enough to attempt.
 
 ## Design choices
 
 These rules are the author's decisions for keeping a chat tutor usable, not findings from a study. Change them if your sessions call for it.
 
-- **120 words per turn and one question per turn.** Keeps each step small enough to attempt.
+- **One explanation per block, up to 300 words, then a short check.** The pretest comes first, and the learner is never questioned on an idea before it has been explained. Other turns stay under 120 words.
 - **No escalation after a correct answer.** The depth is set once in the scope contract, so the session does not drift past the goal.
 - **Two questions in the mastery gate**, one of them from an earlier block after the first block.
 - **Up to 6 cards per block.** Keeps the deck small enough to actually review.

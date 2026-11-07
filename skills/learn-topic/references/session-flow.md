@@ -26,12 +26,14 @@ Wait for the answer. Edit the map if asked. Depth only grows by the learner's re
 
 ## 3. Block loop
 
-Each block has 2 to 4 chunks.
+Each block is four moves:
 
-1. Pretest: one question that makes the learner guess the block's key idea or quantity before you explain it. Say a wrong guess is fine. React in one sentence at most.
-2. Chunk: one idea, at most 100 words, one concrete example, linked to something the learner said they know. For a novice use the worked-example sequence in `teaching-moves.md`.
-3. Attempt: one task on that chunk. All givens stated, only taught concepts used.
-4. Feedback: follow `teaching-moves.md`. Then the next chunk or the next attempt.
+1. Pretest: one question that makes the learner guess the block's key idea or quantity before you explain it. Say a wrong guess or "I don't know" is fine. React in one sentence, then go to the explanation. Do not follow up with hints.
+2. Explanation: one message, up to 300 words, that covers the whole block: 2 or 3 ideas, one concrete example, linked to something the learner said they know. Short paragraphs, a short list if it helps. End with the check, not with a question per idea. For a novice use the worked-example sequence in `teaching-moves.md`.
+3. Check: 1 or 2 related questions in one message. All givens stated, only taught concepts used. The learner answers before any hint.
+4. Feedback: follow `teaching-moves.md`. Then the next block, or a twin question if the check failed.
+
+If a block is too big for 300 words, split it into two blocks in the map instead of asking questions between paragraphs.
 
 Keep a private tally of what is solid, shaky, and parked. Show it only at the end of a block, in at most 4 lines.
 
