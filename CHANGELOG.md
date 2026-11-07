@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] - 2026-11-07
+
+### Changed
+- Session rhythm. The tutor no longer asks a question after every small chunk. Each block is now: one pretest guess, one full explanation (up to 300 words), a short check of 1 or 2 questions, then feedback.
+- "I don't know" now gets an explanation and a twin task instead of a chain of hints. The hint ladder applies only after a wrong or partial attempt and has at most two rungs.
+- Turn limit of 120 words now applies to every turn except the block explanation.
+- Updated the sample session and the research notes to match.
+
 ## [1.1.1] - 2026-11-06
 
 ### Fixed

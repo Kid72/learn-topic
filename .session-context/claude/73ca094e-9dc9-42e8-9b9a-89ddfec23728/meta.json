@@ -3,11 +3,11 @@
   "session_id": "73ca094e-9dc9-42e8-9b9a-89ddfec23728",
   "transcript_kind": "claude-jsonl",
   "transcript_withheld": false,
-  "captured_at": "2026-11-07T16:31:58Z",
+  "captured_at": "2026-11-07T16:33:46Z",
   "project_dir": "/Users/raufaliyev/Library/Application Support/Claude/scratch-workspaces/7372e43a-84a7-4464-ac02-46e7faf32288/b3071c8d-4f25-4e72-adfe-440e8bcec96c/scratch-2026-11-05-19dda3/clone",
   "head": "ed21554dd107a5964dcaee19e29dafa18bef4ceb",
   "branch": "main",
   "user_email": "38584795+Kid72@users.noreply.github.com",
-  "files_changed_vs_head": [],
+  "files_changed_vs_head": ["M	.claude-plugin/plugin.json","M	CHANGELOG.md","M	README.md","M	docs/INSTALL.md","M	docs/research.md","M	examples/sample-session.md","M	skills/learn-topic/SKILL.md","M	skills/learn-topic/references/session-flow.md","M	skills/learn-topic/references/teaching-moves.md"],
   "skipped_large_files": []
 }

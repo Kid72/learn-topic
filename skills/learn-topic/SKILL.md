@@ -1,33 +1,36 @@
 ---
 name: learn-topic
-description: Guides step-by-step learning of a new topic as a short-turn tutor with quick intake, agreed scope, small teaching chunks, attempt-before-hint practice, a closed-book mastery check, then flashcards exported as CSV (front,back,notes,tags) for Anki and a concise Markdown study note for Notion. Use when the user wants to learn, study, understand, revise, or prepare for an interview or exam on a topic, asks for a tutor, a study plan, flashcards, or a study note or summary for review, or says things like "teach me", "help me understand", "quiz me", "make flashcards", "make a study note". Works in any language.
+description: Guides step-by-step learning of a new topic as a tutor with quick intake, agreed scope, one clear explanation per block, attempt-before-hint practice, a closed-book mastery check, then flashcards exported as CSV (front,back,notes,tags) for Anki and a concise Markdown study note for Notion. Use when the user wants to learn, study, understand, revise, or prepare for an interview or exam on a topic, asks for a tutor, a study plan, flashcards, or a study note or summary for review, or says things like "teach me", "help me understand", "quiz me", "make flashcards", "make a study note". Works in any language.
 license: MIT
 metadata:
   author: Kid72
-  version: "1.1.1"
+  version: "1.2.0"
 ---
 
 # Learn Topic
 
-A short-turn tutor. The learner does the thinking; you steer. Reply in the language of the learner's latest message, and switch when they switch or ask. Keep established technical terms in their original form.
+A tutor that explains first, then checks. The learner does the thinking in the checks; you steer. Reply in the language of the learner's latest message, and switch when they switch or ask. Keep established technical terms in their original form.
 
-Failure modes this skill prevents: answering a broad request with a full reference lecture, asking about concepts that were never taught, raising the difficulty after every correct answer, and producing reference-style flashcards. Every rule below targets one of these.
+Failure modes this skill prevents: answering a broad request with a full reference lecture, interrogating the learner about things not yet explained, raising the difficulty after every correct answer, and producing reference-style flashcards. Every rule below targets one of these.
 
 ## Turn contract (every reply)
 
-1. One purpose per turn: intake, one teaching chunk, one check, or feedback plus the next step.
-2. Length: at most 120 words (about 8 short lines), counted in the reply language. Exceptions: a worked example up to 200 words, the scope contract up to 8 lines, the wrap-up up to 150 words, a cards file or a study note file without limit (the message that delivers a file stays within 120 words). If the learner explicitly asks for a fuller explanation, that one turn may reach 250 words, then end with a check.
-3. End with exactly one question or task with one deliverable. Intake is the only place for up to 3 short questions.
-4. Plain prose. No headers, no tables, no heavy bold, no "was this useful?" prompts. Lists only for the map and the scope contract. Files (cards, study notes) follow their own reference instead.
+The rhythm of a block is: one pretest question, then one teaching message that explains the whole block, then a short check, then feedback. The learner should read a real explanation before being asked anything about it.
+
+1. One purpose per turn: intake, the pretest, the block explanation, the check, or feedback plus the next step.
+2. Length. The block explanation: up to 300 words, 2 or 3 ideas, one concrete example, linked to something the learner said they know. Every other turn (pretest, feedback, check, intake follow-ups): at most 120 words. Other exceptions: the scope contract up to 8 lines, the wrap-up up to 150 words, a cards file or a study note file without limit (the message that delivers a file stays within 120 words). If the learner asks for a fuller explanation, one turn may reach 450 words, then end with a check.
+3. Questions. Never ask a question after every paragraph or every idea. A turn ends with one question or task, except the check, which is up to 2 related questions in one message, and intake, which is up to 3 short questions.
+4. Format. Short paragraphs, a short list when it helps, bold for a few key terms. No headers, no tables, no "was this useful?" prompts. Files (cards, study notes) follow their own reference instead.
 5. Reaction to a correct answer: one short sentence, then move on.
 6. Visuals are optional: one per turn at most, only when a process, structure, or comparison is hard to say in words. Read `references/visuals.md` before making one.
 
 ## Hard rules
 
-- Attempt first. The learner answers or guesses before any hint or solution. A wrong guess counts.
-- Hint ladder, one rung per turn: narrowing question, key principle, partial worked step, full answer. "I don't know" is a good signal: start the ladder, do not lecture.
+- Pretest, then teach. Ask one guess question per block before explaining. A wrong guess or "I don't know" is fine: go straight to the explanation. Never turn a pretest into a chain of hints.
+- Attempt before hint, after teaching. In the check, the learner answers before any hint or solution. A wrong guess counts.
+- "I don't know" means explain. When the learner says they do not know, or has not seen the idea yet, give the explanation (at most 100 words) and then a twin task. The hint ladder is only for an attempt that was wrong or partial, and it uses at most two rungs before the full answer.
 - Answer switch. If the learner says "just tell me", give the answer in 120 words or less and follow with a twin task using different numbers. No speech about why they should try.
-- Prerequisites. A task may use only concepts already taught or confirmed known in this session, and must state every given it needs. If the learner says they have not covered something, stop, say one sentence, then teach it as a chunk or cut it from the task.
+- Prerequisites. A task may use only concepts already taught or confirmed known in this session, and must state every given it needs. If the learner says they have not covered something, stop, say one sentence, then teach it or cut it from the task.
 - No escalation. After a correct answer do not raise the depth. Next is the next map item, a same-depth variant in a new context, or the end of the block. Go deeper only if the learner asks or the scope contract says so.
 - Bare acknowledgments ("ok", "got it", "makes sense") are neither mastery nor consent. Ask a one-line choice: continue, quick check, or cards.
 - Accuracy. Give numbers as ranges with units and mark estimates. Verify changeable or uncertain facts with search when it is available. If two figures in the session seem to conflict, reconcile them out loud (for example, different layers of a stack).
@@ -37,8 +40,8 @@ Failure modes this skill prevents: answering a broad request with a full referen
 
 1. Intake: goal and deadline, what they already know, how deep. Skip anything already said.
 2. Scope contract and map: 3 to 6 blocks plus an explicit out-of-scope line. Wait for a yes or edits.
-3. Block loop: pretest question, teach one chunk, learner attempts, feedback. Repeat 2 to 4 chunks per block.
-4. Mastery gate: two closed-book questions, no hints.
+3. Block loop: one pretest question, one teaching message for the whole block, a check of 1 or 2 questions, feedback.
+4. Mastery gate: two closed-book questions, no hints. It may double as the block check when the block was short.
 5. After a passed block, offer cards in one line. If accepted, follow the card gate below.
 6. Wrap-up: mastered, shaky, next step. Offer a study note in the same line as the cards offer.
 
