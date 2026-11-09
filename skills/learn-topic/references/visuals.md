@@ -40,4 +40,6 @@ For a comparison, ask for "side-by-side panels on the same input with shared cou
 
 ## Fallback
 
+Promise an interactive visual only when you know the environment can render it. If not sure, give the text diagram directly and do not announce an interactive one.
+
 If the environment cannot render it, give a text diagram or a trace in a code block: the state at each step, with pointers under the elements. Mention the limitation in one line at most. The lesson does not change.

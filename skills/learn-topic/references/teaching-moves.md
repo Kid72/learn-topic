@@ -15,9 +15,11 @@ Only for an attempt that was wrong or partial, after the block was explained. At
 - Mostly right, flawed premise: name the right part in a clause, then give a case where the premise breaks and ask the learner to spot the contradiction. Do not say "wrong".
 - Slip (arithmetic, units, typo): point to the line or step and ask them to recheck. Do not redo it for them.
 - "I don't know" or "I'm stuck": thank them for being straight in a few words, give the explanation in at most 100 words, then ask a twin task. If it comes after an attempt on a check, use one rung, then the answer.
+- "I did not understand X": a shaky item. Do not repeat the same explanation longer and do not send a second long analogy. Cut to the one step that is unclear, explain it a different way in at most 100 words, ask one small question. If it is still open, try one more angle (a tiny concrete example with real values), then park it explicitly and keep it on the shaky list. Never answer "ok, next" and drop it silently.
+- Partial answer (right on one side, misses the key point): name the right part in a clause, then ask one follow-up that leads to the key point. Example: asked why local counters break a rate limit, the learner says some nodes return 429 early. That is a real effect, but the key point is that the limit multiplies by the number of nodes. Say so in the follow-up, not "perfect".
 - "I haven't covered X yet", or "that is too much at once": stop at once. One short clause of apology. Cut the scope to the single next step and ask what to keep. Do not send a long recap, a recap is another dump. A 2-line reset is fine: "For now only A and B matter, the rest is parked."
-- "Got it", "ok", "next": the one-line choice from SKILL.md (continue, quick check, or cards). If they choose a quick check, ask one transfer question in a new context.
-- "Just tell me the answer": the answer switch from SKILL.md.
+- "Got it", "ok", "next": the one-line choice from `tutoring-rules.md` (continue, quick check, or cards). If they choose a quick check, ask one transfer question in a new context.
+- "Just tell me the answer": the answer switch from `tutoring-rules.md`.
 - Frustration: shrink the step size and make the next task one the learner can solve.
 - Tangent: two sentences, park it, return.
 

@@ -1,6 +1,6 @@
 front,back,notes,tags
-"Postgres: what does a filtered query do when no index applies?","A sequential scan of the whole table.","","databases::indexes postgres"
-"Postgres: why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","Learner's first answer was 'no idea'; reached it from one hint.","databases::indexes writes"
-"Postgres, index on (a, b): which filter column can use it alone?","Only a, the leading column; a filter on b alone usually cannot.","","databases::indexes composite"
-"Postgres: why is an index on a 2-value column rarely used?","Low selectivity: the planner usually prefers a full scan.","","databases::indexes selectivity"
-"Postgres: what does EXPLAIN ANALYZE show that EXPLAIN does not?","Actual run times and row counts, because it executes the query.","","databases::indexes explain"
+"A filtered query has no usable index: what does the database do?","A sequential scan of the whole table.","","databases::indexes postgres"
+"Why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","Learner's first answer was 'no idea'; reached it from one hint.","databases::indexes writes"
+"A composite index on (a, b): which filter column can use it alone?","Only a, the leading column; a filter on b alone usually cannot.","","databases::indexes composite"
+"Why is an index on a 2-value column rarely used?","Low selectivity: the planner usually prefers a full scan.","","databases::indexes selectivity"
+"What does EXPLAIN ANALYZE show that EXPLAIN does not?","Actual run times and row counts, because it executes the query.","","databases::indexes explain"

@@ -46,7 +46,7 @@ Check: you filter by `status` (3 values) and `user_id` (millions of values), bot
 
 *[... block 4 continues in the same rhythm ...]*
 
-**Tutor:** All four blocks passed the closed-book check. Make cards for them (up to 6 per block)?
+**Tutor:** All four blocks passed the closed-book check. Make cards for them (4 to 6 per block)?
 
 **You:** Yes.
 

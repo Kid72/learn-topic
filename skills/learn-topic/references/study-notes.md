@@ -1,5 +1,7 @@
 # Study notes for Notion
 
+Before writing the note: read this file, take the shaky list from the session for the "Shaky spots" section, include one running worked example if the topic has a path or process, write no LaTeX and no dashes, then run the pre-send check at the end.
+
 A short Markdown note that covers the whole topic, so the learner can walk through it later and review by recall. It is a review tool, not a transcript and not a textbook chapter. This applies retrieval practice and spacing; the exact format is a design choice, not a proven layout.
 
 ## When
@@ -22,8 +24,8 @@ Good: `≈ 150 ms` and `SF ↔ London`.
 3. Key ideas: 5 to 8 sections (design choice), each a level 3 heading naming one idea, followed by 1 to 4 short bullets. Use bullets for parallel facts and full sentences for causes ("X leads to Y because Z"). Define a term where it first appears. Add the relation to a neighbouring idea (depends on, causes, contrasts with).
 4. Worked example: at most one tiny example per technical idea, 5 lines or fewer, in a fenced code block with a language tag or in a short numbered list. Skip it for ideas that do not need one. Put a one-line caption right under it.
 5. Comparison: one table only if the topic holds a real comparison with the same attributes across items. At most 3 columns, plain text cells. Otherwise omit it. No empty or decorative table.
-6. Shaky spots: drawn from this session only: answers the learner missed, hints they needed, questions they asked, things they said they had not known. Name each specifically, with a pointer to the idea it belongs to. If the session showed no gaps, write "None showed up in this session" and nothing else.
-7. Self-test: 6 to 10 questions (design choice), about one per key idea, each needing a "why" or "what happens if" answer, never yes/no and never answerable by copying a phrase from the overview. Put a blank line after the question, then the answer in its own paragraph starting with `Answer:`, so question and answer stay separate lines after import and the note works without toggles. Order: questions on shaky spots first.
+6. Shaky spots: drawn from the session's shaky list only: answers the learner missed or only partly gave, hints they needed, questions they asked, things they said they had not understood. An item the learner said they did not understand must appear here, with the short explanation that finally worked. Name each specifically, with a pointer to the idea it belongs to. If the session showed no gaps, write "None showed up in this session" and nothing else.
+7. Self-test: 6 to 10 questions (design choice), about one per key idea, each needing a "why" or "what happens if" answer, never yes/no and never answerable by copying a phrase from the overview. Put a blank line after the question, then the answer in its own paragraph starting with `Answer:` (translate the label into the learner's language), so question and answer stay separate lines after import and the note works without toggles. Order: questions on shaky spots first.
 8. Your turn: 2 or more prompts with nothing under them, for the learner to fill in, for example "Explain idea X in your own words", "Redraw how A, B, C relate from memory", "Write the gist in one sentence". Never pre-fill these.
 9. Review schedule: a `- [ ]` checklist, see below.
 
@@ -33,7 +35,7 @@ Suggest the next day, about 1 week, and about 3 weeks. Say in the note that thes
 
 ## Length
 
-Design choice, not evidence: no study located gives the best length for a whole-topic note. Aim for about 500 to 800 words in the body, one to two screens, a full pass in about 10 to 15 minutes. Treat it as tunable. If the topic needs more, cut ideas that are not in the scope contract before lengthening, or tell the learner which extra detail was left out and offer a second note.
+Design choice, not evidence: no study located gives the best length for a whole-topic note. Aim for about 500 to 800 words in the body (the self-test answers are not counted), one to two screens, a full pass in about 10 to 15 minutes. Treat it as tunable. If the topic needs more, cut ideas that are not in the scope contract before lengthening, or tell the learner which extra detail was left out and offer a second note.
 
 ## What to cut
 
