@@ -47,6 +47,7 @@ At the end of a block:
 - Each question has one key point. Check the answer against it before reacting (see `tutoring-rules.md`).
 - Pass: both correct without hints.
 - Fail: re-teach only the failed point in 100 words or fewer, give a twin question, and carry the shaky item into the next block as a warm-up question.
+- A block with a parked item counts as passed except for that item, which stays on the shaky list. Cards and note entries for it are allowed and marked shaky.
 - If the learner wants to skip the gate, allow it, mark the block as unverified, and do not make cards from it.
 
 After a pass, offer cards in one line: "Make cards for this block (4 to 6)?" If the answer is not a clear yes, do not make them.
