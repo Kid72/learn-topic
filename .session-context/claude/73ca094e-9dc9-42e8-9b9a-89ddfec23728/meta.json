@@ -3,11 +3,11 @@
   "session_id": "73ca094e-9dc9-42e8-9b9a-89ddfec23728",
   "transcript_kind": "claude-jsonl",
   "transcript_withheld": false,
-  "captured_at": "2026-11-09T11:53:36Z",
+  "captured_at": "2026-11-09T11:55:07Z",
   "project_dir": "/Users/raufaliyev/Library/Application Support/Claude/scratch-workspaces/7372e43a-84a7-4464-ac02-46e7faf32288/b3071c8d-4f25-4e72-adfe-440e8bcec96c/scratch-2026-11-05-19dda3/clone",
-  "head": "91851d27b9adb6349cd916404a9a0c7a2d71aea1",
+  "head": "a8db9dd0f3405f25da9d96e0f3e101c67a669009",
   "branch": "main",
   "user_email": "38584795+Kid72@users.noreply.github.com",
-  "files_changed_vs_head": ["M	.claude-plugin/plugin.json","M	CHANGELOG.md","M	docs/INSTALL.md","M	docs/research.md","M	examples/sample-cards.csv","M	examples/sample-session.md","M	skills/learn-topic/SKILL.md","M	skills/learn-topic/references/anki-cards.md","M	skills/learn-topic/references/session-flow.md","M	skills/learn-topic/references/study-notes.md","M	skills/learn-topic/references/teaching-moves.md","A	skills/learn-topic/references/tutoring-rules.md","M	skills/learn-topic/references/visuals.md"],
+  "files_changed_vs_head": [],
   "skipped_large_files": []
 }
