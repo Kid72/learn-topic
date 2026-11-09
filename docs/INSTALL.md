@@ -11,7 +11,7 @@
 /plugin install learn-topic@kid72-skills
 ```
 
-Pin a version with `Kid72/learn-topic#v1.2.0`. Third-party marketplaces do not auto-update by default, so re-run the install to upgrade.
+Pin a version with `Kid72/learn-topic#v1.3.0`. Third-party marketplaces do not auto-update by default, so re-run the install to upgrade.
 
 ## Any agent, via `npx skills`
 

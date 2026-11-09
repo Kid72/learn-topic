@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.3.0] - 2026-11-09
+
+### Changed
+- `SKILL.md` is now a short router: five always-on rules, a "read before you act" table, and the flow. The turn contract and hard rules moved to `references/tutoring-rules.md`.
+- Things the learner did not understand now stay on a shaky list until resolved. The list drives the next warm-up, the mastery gate, the cards, and the "Shaky spots" section of the study note.
+- "I did not understand" no longer triggers a long second analogy followed by moving on. The tutor cuts to one step, explains it differently, and parks the item explicitly if needed.
+- Answers are checked against the key point of the question before the tutor reacts. Partial answers get the right part named and one follow-up. No praise phrases.
+- Number of blocks is derived from the topic (2 to 8), not defaulted. A block that needs more than 300 words is split.
+- Cards: 4 to 6 per block, no topic prefix, shaky items first, one idea per card, no duplicates.
+- Interactive visuals are promised only when the environment can show them.
+
 ## [1.2.0] - 2026-11-07
 
 ### Changed

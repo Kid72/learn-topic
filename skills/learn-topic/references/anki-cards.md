@@ -1,21 +1,23 @@
 # Flashcards for Anki
 
+Before writing any card: read the checklist below, build cards from the shaky list first, keep each answer to one idea, then run the checklist on every card and drop the failures.
+
 ## When
 
 Only after the mastery gate and a clear yes from the learner (or an explicit cards-only request with the learner's own notes). Only for items the learner worked through or supplied. Never a summary of the textbook or of your own explanation.
 
 ## Where cards come from (in priority order)
 
-1. The learner's errors and near-misses in this session.
+1. The shaky list: what the learner missed, did not understand, or answered only partly in this session.
 2. What they hesitated on, asked about, or said they had not known.
 3. Insights they reconstructed themselves.
-4. A few anchor numbers or rules they now need to use fluently.
+4. A few anchor numbers or rules they now need to use fluently, with the word "estimate" where a figure is not exact.
 
 ## Checklist (every answer must be yes, otherwise split, shrink, or drop)
 
 - One idea: a single fact or a single relationship.
 - The answer is one thing: a number with units, a name, a short phrase, or a one-sentence reason of about 12 words or fewer. Recallable in under 10 seconds.
-- The front stands alone: it carries the domain prefix, the units, and the shape of the answer ("order of magnitude", "why", "how many times").
+- The front stands alone: it names its subject explicitly (not "this approach"), and carries the units and the shape of the answer ("order of magnitude", "why", "how many times"). No topic prefix is needed.
 - No lists or enumerations ("name 5..."), no yes/no questions, no "explain how X works" mega-questions, no formula with 3 or more factors.
 - The front does not give the answer away through wording.
 - It will make sense in 3 months without "as we discussed".
@@ -47,7 +49,7 @@ Numbers in these examples only illustrate the format; use the figures from the a
 - `tags`: lowercase, separated by spaces, no spaces inside a tag, never commas. Use `::` for hierarchy, for example `system_design::numbers latency`.
 - `notes`: up to 25 words, usually empty or one line: what happened in the session (the learner's slip, their analogy) or a one-line reason. Empty is fine: `""`.
 - Language: the learner's language for front, back and notes, with established technical terms kept in their original form.
-- At most 6 cards per block unless the learner asks for more. No duplicates.
+- 4 to 6 cards per block, more only if the learner asks. No duplicates: if two cards test the same idea, keep the better one. A card with two ideas is split or cut.
 
 ## Finish
 

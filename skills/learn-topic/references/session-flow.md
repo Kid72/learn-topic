@@ -18,7 +18,7 @@ One message, at most 8 lines:
 
 - Goal in one line, in the learner's words.
 - Depth in one line, as "what a good practitioner can say or do in 2 minutes", not as an implementation depth.
-- Map: 3 to 6 blocks, each named in 6 words or fewer, ordered by dependency first and payoff second (the part that covers most of the goal comes early).
+- Map: one line per block, each named in 6 words or fewer and phrased as what the learner will be able to say, ordered by dependency first and payoff second (the part that covers most of the goal comes early). How many blocks: do not default to a number. Group the ideas the goal needs into clusters that each fit one explanation of 300 words and a check of 1 or 2 questions. A broad topic gets more blocks, a narrow one fewer (2 to 8 is the working range). Split a cluster that needs more than 300 words, merge clusters that are only a few lines each.
 - Out of scope: 2 or 3 items that would tempt you to dig deeper than the goal needs.
 - End with a one-line confirmation question, for example: "Go with this, or adjust?"
 
@@ -28,14 +28,14 @@ Wait for the answer. Edit the map if asked. Depth only grows by the learner's re
 
 Each block is four moves:
 
-1. Pretest: one question that makes the learner guess the block's key idea or quantity before you explain it. Say a wrong guess or "I don't know" is fine. React in one sentence, then go to the explanation. Do not follow up with hints.
+1. Pretest: one question that makes the learner guess the block's key idea or quantity before you explain it. Say a wrong guess or "I don't know" is fine. React in one sentence, then go to the explanation. Do not follow up with hints. Open the block with a warm-up question on the shaky list first, when it has items.
 2. Explanation: one message, up to 300 words, that covers the whole block: 2 or 3 ideas, one concrete example, linked to something the learner said they know. Short paragraphs, a short list if it helps. End with the check, not with a question per idea. For a novice use the worked-example sequence in `teaching-moves.md`.
 3. Check: 1 or 2 related questions in one message. All givens stated, only taught concepts used. The learner answers before any hint.
 4. Feedback: follow `teaching-moves.md`. Then the next block, or a twin question if the check failed.
 
 If a block is too big for 300 words, split it into two blocks in the map instead of asking questions between paragraphs.
 
-Keep a private tally of what is solid, shaky, and parked. Show it only at the end of a block, in at most 4 lines.
+Keep the private shaky list from `tutoring-rules.md`, plus what is solid and parked. Show it only at the end of a block, in at most 4 lines.
 
 When the learner asks a tangent, answer in two sentences, add it to a parked list, and return to the block.
 
@@ -43,12 +43,13 @@ When the learner asks a tangent, answer in two sentences, add it to a parked lis
 
 At the end of a block:
 
-- Two questions, one at a time, closed-book, no hints. From the second block onward make one of them an item from an earlier block, so practice is mixed.
+- Two questions, one at a time, closed-book, no hints. From the second block onward make one of them an item from an earlier block, so practice is mixed, and prefer an item from the shaky list.
+- Each question has one key point. Check the answer against it before reacting (see `tutoring-rules.md`).
 - Pass: both correct without hints.
 - Fail: re-teach only the failed point in 100 words or fewer, give a twin question, and carry the shaky item into the next block as a warm-up question.
 - If the learner wants to skip the gate, allow it, mark the block as unverified, and do not make cards from it.
 
-After a pass, offer cards in one line: "Make cards for this block (up to 6)?" If the answer is not a clear yes, do not make them.
+After a pass, offer cards in one line: "Make cards for this block (4 to 6)?" If the answer is not a clear yes, do not make them.
 
 ## 5. Wrap-up (at most 150 words)
 

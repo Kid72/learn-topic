@@ -48,5 +48,5 @@ These rules are the author's decisions for keeping a chat tutor usable, not find
 - **One explanation per block, up to 300 words, then a short check.** The pretest comes first, and the learner is never questioned on an idea before it has been explained. Other turns stay under 120 words.
 - **No escalation after a correct answer.** The depth is set once in the scope contract, so the session does not drift past the goal.
 - **Two questions in the mastery gate**, one of them from an earlier block after the first block.
-- **Up to 6 cards per block.** Keeps the deck small enough to actually review.
+- **4 to 6 cards per block.** Keeps the deck small enough to actually review.
 - **Self-quiz after 1 day, 1 week, and 1 month** when there are no cards. The gaps follow the spacing idea from Cepeda et al., but the exact numbers are a convention.
