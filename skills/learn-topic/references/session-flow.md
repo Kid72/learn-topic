@@ -46,7 +46,9 @@ The check of step 3 and the gate are the same round:
 - Two questions, one at a time, closed-book, no hints. From the second block onward make one of them an item from an earlier block, so practice is mixed, and prefer an item from the shaky list.
 - Each question has one key point. Check the answer against it before reacting (see `tutoring-rules.md`).
 - Pass: both correct without hints.
-- Fail: re-teach only the failed point in 100 words or fewer, give a twin question, and carry the shaky item into the next block as a warm-up question.
+- Fail: re-teach only the failed point in 100 words or fewer, give a twin question (answered without a hint, it closes the item and the block passes), and carry the shaky item into the next block as a warm-up question.
+- "Next" while a gate question is still open: the gate is not finished. Park that item in one line, keep it on the shaky list, and count the block as passed except for that item only if the other question was answered correctly.
+- A wrong pretest guess is not a shaky item by itself. It becomes one only if the same idea is missed in the gate.
 - A block with a parked item counts as passed except for that item, which stays on the shaky list. Cards and note entries for it are allowed and marked shaky.
 - If the learner wants to skip the gate, allow it, mark the block as unverified, and do not make cards from it.
 
@@ -57,4 +59,4 @@ After a pass, offer cards in one line: "Make cards for this block (up to 6)?" If
 - Three lines: solid, shaky, next step. Shaky means the learner's concrete gaps from this session (what they missed, did not understand, or answered partly), each named specifically. Never generic advice such as "review caching".
 - One line with a restart note the learner can paste next time, for example: "Topic X, blocks 1-2 passed, shaky: A and B, next is block 3." On resume, skip intake and open with a two-question closed-book warm-up on the shaky items.
 - Review: if there are no cards, suggest a self-quiz after 1 day, 1 week, and 1 month (a study note carries its own review checklist). If there are cards, the scheduler of the card app handles it.
-- If cards were not offered yet and at least one block passed the gate, offer them now, and offer a study note for Notion in the same line ("Make cards, a study note, both, or neither?"). Cards may also be offered after each passed block, a note only here. If the answer is not a clear yes, write neither. Details in `study-notes.md`.
+- If cards were not offered yet and at least one block passed the gate, offer them now, and offer a study note for Notion in the same line ("Make cards, a study note, both, or neither?"). Cards may also be offered after each passed block, a note only here. If the answer is not a clear yes, write neither. A yes to a per-block cards offer already covers those cards: at the wrap-up ask only about what was not yet agreed. Details in `study-notes.md`.
