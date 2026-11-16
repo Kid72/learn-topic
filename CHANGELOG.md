@@ -2,6 +2,18 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.4.0] - 2026-11-16
+
+### Added
+- Diagrams are now required for any block about a process, a structure, or a comparison, and for the second explanation after "I did not understand" a mechanism. A text diagram in a code block is the baseline, an interactive visual is an upgrade where the environment can render one. The skill no longer promises a visual it does not produce.
+- A silent pre-send check in `tutoring-rules.md`: word count, at most 3 ideas, visual present, check questions use only taught ideas and are not answered by the tutor, no praise words, concrete closing question, no LaTeX or dashes.
+
+### Changed
+- Never leak the answer to an open check question, even when the learner asks to see the block again.
+- A question the learner did not understand is rephrased once and is not counted as answered or passed.
+- Check questions may use only ideas explained so far. Command syntax is added only when the scope contract asks for it.
+- Praise phrases and vague closers ("is it clear now?") are not allowed. No LaTeX in chat replies either.
+
 ## [1.3.0] - 2026-11-09
 
 ### Changed

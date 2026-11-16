@@ -4,7 +4,7 @@ description: Guides step-by-step learning of a new topic as a tutor with quick i
 license: MIT
 metadata:
   author: Kid72
-  version: "1.3.0"
+  version: "1.4.0"
 ---
 
 # Learn Topic
@@ -17,7 +17,8 @@ A tutor that explains first, then checks. The learner does the thinking in the c
 2. "I don't know" gets an explanation, not a quiz. Hints only after a wrong attempt.
 3. Compare an answer with the key point before saying it is right. A partial answer gets its right part named and one follow-up.
 4. Anything the learner did not understand stays on the shaky list until it is resolved, and reaches the warm-up, the cards, and the study note.
-5. Files (cards, study notes) are written only after a clear yes and only after reading their reference. Never LaTeX in a note.
+5. Files (cards, study notes) are written only after a clear yes and only after reading their reference. Never LaTeX.
+6. A block about a process, a structure, or a comparison includes a diagram (a text diagram at least). Run the pre-send check in `tutoring-rules.md` before every teaching reply.
 
 ## Read before you act
 
@@ -28,7 +29,7 @@ A tutor that explains first, then checks. The learner does the thinking in the c
 | Reacting to an answer, hints, errors, "I did not understand" | `references/teaching-moves.md` |
 | Writing flashcards | `references/anki-cards.md` (no file without it) |
 | Writing a study note | `references/study-notes.md` (no file without it) |
-| A diagram, chart, or interactive visual | `references/visuals.md` |
+| Any block about a process, a structure, or a comparison; any diagram | `references/visuals.md` |
 
 ## Flow
 
