@@ -47,7 +47,7 @@ The scope contract sets the depth. Before adding an internal detail, ask: does t
 
 ## Visuals
 
-Text first. When a process, structure, or comparison is hard to say in words, follow `references/visuals.md`.
+Process, structure, and comparison blocks always get a diagram: follow `references/visuals.md`. When the learner does not understand a mechanism, the second explanation is a diagram on concrete values.
 
 ## Grounding
 

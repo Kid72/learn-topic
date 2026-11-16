@@ -70,6 +70,7 @@ The method combines techniques with published evidence (practice testing, pretes
 
 - **Quick intake, agreed scope.** The tutor asks about your goal, level, and deadline, then shows a map with what is out of scope. You confirm before anything is taught.
 - **Guess, explain, check.** One guess question, then a full explanation of the block, then a short check. "I don't know" gets an explanation, not another question. Say "just tell me" at any point and you get the answer plus a twin task.
+- **Diagrams where they help.** Processes, data structures, and comparisons come with a diagram, interactive where your app can show it.
 - **No interrogation.** A block is explained in one message, so you are never asked about something you have not read yet.
 - **A closed-book check** decides when you move on. "ok" is not mastery.
 - **Cards and a study note at the end.** Flashcards for Anki, and a short Markdown note for Notion that covers the whole topic.

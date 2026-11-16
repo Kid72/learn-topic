@@ -28,6 +28,13 @@ Go with this, or adjust?
 
 An index is a separate sorted structure (in Postgres, a B-tree by default) that maps column values to row locations. With an index on `email`, the database walks the tree in a handful of steps and jumps to the matching rows. On 10 million rows that is the difference between reading everything and reading a few pages.
 
+```text
+email index (sorted)         table (10M rows)
+  anna@x.com  ->  row 8201     
+  bob@x.com   ->  row 17     lookup "bob@x.com": 3 steps in the index, 1 row read
+  ...                        no index: 10,000,000 rows read
+```
+
 The price is paid on writes. Every INSERT, UPDATE of an indexed column, and DELETE updates the table and every index on it. One index is cheap. Five indexes on a write-heavy table mean six structures to maintain per insert, plus more disk and memory.
 
 So the rule of thumb is: index the columns you filter, join, or sort on often, and do not index everything. Reads get faster, writes get slower.
