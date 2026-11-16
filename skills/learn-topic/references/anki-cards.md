@@ -27,7 +27,7 @@ Only after the mastery gate and a clear yes from the learner (or an explicit car
 
 - Anchor number: "Latency: order of magnitude of an NVMe SSD random read?" with the back "tens of microseconds".
 - Estimation drill: "300M requests per day: rough average QPS?" with the back "about 3,000".
-- Why, short: "Why is synchronous cross-continent replication slow?" with the back "every write waits one RTT, 70-100 ms".
+- Why, short: "Why is synchronous cross-continent replication slow?" with the back "every write waits one RTT, 70 to 100 ms".
 - Trap from the session: the front names the trap, the back gives the resolution, and notes record how the learner stumbled.
 - Contrast: "When do you choose A over B?" with one deciding condition.
 - Fix for the learner's own slip: the exact calculation they got wrong.
@@ -43,13 +43,13 @@ Numbers in these examples only illustrate the format; use the figures from the a
 ## CSV format
 
 - Deliver a file named `<topic>-cards.csv` when file tools are available and send it to the learner. Otherwise one `csv` code block. UTF-8.
-- First line is the header: `front,back,notes,tags`. If the card app imports that line as a card, delete that one card after import.
+- First line is the header: `front,back,notes,tags`, exactly this, with commas (never `Question;Answer;Tags`). If the card app imports that line as a card, delete that one card after import.
 - Comma separator. Every field in double quotes. A double quote inside a field is doubled.
 - No line breaks inside fields and no HTML. Write each field on one line and separate parts with " / " or a semicolon.
 - `tags`: lowercase, separated by spaces, no spaces inside a tag, never commas. Use `::` for hierarchy, for example `system_design::numbers latency`.
 - `notes`: up to 25 words, usually empty or one line: what happened in the session (the learner's slip, their analogy) or a one-line reason. Empty is fine: `""`.
 - Language: the learner's language for front, back and notes, with established technical terms kept in their original form.
-- 4 to 6 cards per block, more only if the learner asks. No duplicates: if two cards test the same idea, keep the better one. A card with two ideas is split or cut.
+- One file per session: write the header once, and add cards of later blocks as new lines (or a new file only if the first was already imported). Up to 6 cards per passed block, fewer when the block had fewer ideas, never padded. More only if the learner asks. No duplicates: if two cards test the same idea, keep the better one. A card with two ideas is split or cut.
 
 ## Finish
 

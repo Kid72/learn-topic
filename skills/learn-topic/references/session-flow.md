@@ -30,18 +30,18 @@ Each block is four moves:
 
 1. Pretest: one question that makes the learner guess the block's key idea or quantity before you explain it. Say a wrong guess or "I don't know" is fine. React in one sentence, then go to the explanation. Do not follow up with hints. Open the block with a warm-up question on the shaky list first, when it has items.
 2. Explanation: one message, up to 300 words, that covers the whole block: 2 or 3 ideas, one concrete example, linked to something the learner said they know. Short paragraphs, a short list if it helps. If the block is about a process, a structure, or a comparison, include one diagram from `visuals.md`. End with the check, not with a question per idea. For a novice use the worked-example sequence in `teaching-moves.md`.
-3. Check: 1 or 2 related questions in one message. All givens stated, only taught concepts used. The learner answers before any hint.
-4. Feedback: follow `teaching-moves.md`. Then the next block, or a twin question if the check failed.
+3. Check, which is the gate (section 4): two related questions, asked one at a time, all givens stated, only taught concepts used. The learner answers before any hint. There is no second round: say "passed" only after the gate result.
+4. Feedback: follow `teaching-moves.md`. Then the next block, or a twin question if the gate failed.
 
 If a block is too big for 300 words, split it into two blocks in the map instead of asking questions between paragraphs.
 
-Keep the private shaky list from `tutoring-rules.md`, plus what is solid and parked. Show it only at the end of a block, in at most 4 lines.
+Keep the shaky list from `tutoring-rules.md`, plus what is solid and parked. An item is open until the learner answers it correctly without a hint (in a warm-up or the gate); then it is closed. A parked item stays on the list. At the end of a block say in one line which items are still open.
 
 When the learner asks a tangent, answer in two sentences, add it to a parked list, and return to the block.
 
-## 4. Mastery gate
+## 4. Mastery gate (the check of the block)
 
-At the end of a block:
+The check of step 3 and the gate are the same round:
 
 - Two questions, one at a time, closed-book, no hints. From the second block onward make one of them an item from an earlier block, so practice is mixed, and prefer an item from the shaky list.
 - Each question has one key point. Check the answer against it before reacting (see `tutoring-rules.md`).
@@ -50,11 +50,11 @@ At the end of a block:
 - A block with a parked item counts as passed except for that item, which stays on the shaky list. Cards and note entries for it are allowed and marked shaky.
 - If the learner wants to skip the gate, allow it, mark the block as unverified, and do not make cards from it.
 
-After a pass, offer cards in one line: "Make cards for this block (4 to 6)?" If the answer is not a clear yes, do not make them.
+After a pass, offer cards in one line: "Make cards for this block (up to 6)?" If the answer is not a clear yes, do not make them.
 
 ## 5. Wrap-up (at most 150 words)
 
-- Three lines: solid, shaky, next step.
+- Three lines: solid, shaky, next step. Shaky means the learner's concrete gaps from this session (what they missed, did not understand, or answered partly), each named specifically. Never generic advice such as "review caching".
 - One line with a restart note the learner can paste next time, for example: "Topic X, blocks 1-2 passed, shaky: A and B, next is block 3." On resume, skip intake and open with a two-question closed-book warm-up on the shaky items.
 - Review: if there are no cards, suggest a self-quiz after 1 day, 1 week, and 1 month (a study note carries its own review checklist). If there are cards, the scheduler of the card app handles it.
 - If cards were not offered yet and at least one block passed the gate, offer them now, and offer a study note for Notion in the same line ("Make cards, a study note, both, or neither?"). Cards may also be offered after each passed block, a note only here. If the answer is not a clear yes, write neither. Details in `study-notes.md`.
