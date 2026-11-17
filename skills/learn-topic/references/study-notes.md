@@ -38,7 +38,7 @@ Everything comes from the learner's material or this session. Mark additions `(o
 
 Use: headings `#` to `###`; short paragraphs; `-` bullets and `1.` lists nested at most 2 levels; `**bold**` for a handful of key terms; `*italic*`; inline code; fenced code blocks with a language tag (at most 5 lines); `[text](https://full-url)`; `>` sparingly. One pipe table of 3 columns or fewer and `- [ ]` for the review checklist only.
 
-Do not use: horizontal rules `---`, bold or code inside table cells, `*` bullets, toggles, `<details>`, callouts, `$` math, Mermaid, columns, HTML, footnotes, page mentions, relative links, images.
+Do not use: horizontal rules `---` as section dividers (the separator row of a table is fine), bold or code inside table cells, `*` bullets, toggles, `<details>`, callouts, `$` math, Mermaid, columns, HTML, footnotes, page mentions, relative links, images.
 
 Do not say "works in Notion"; it has not been test-imported. Import path: Settings, Import, Text & Markdown. In Notion the learner can select the answer lines and apply the toggle shortcut to hide them.
 
