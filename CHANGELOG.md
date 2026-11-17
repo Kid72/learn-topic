@@ -2,6 +2,23 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.4.1] - 2026-11-17
+
+Found by reviewing a real Gemini run (Kafka): the model did not open the references, so the card format, the note template, the word limits and the gate were all skipped.
+
+### Added
+- `SKILL.md` now has a "First action" gate (open the two core references, or say so and use the fallback) and a "Hard minimum" block: the one place for word limits, question limits, the ban on LaTeX, `$` and em/en dashes, the CSV spec and the note outline.
+- The Gemini archive is built with all references inlined into `SKILL.md` (`scripts/build-zips.sh`), so it works when the model cannot open files.
+- A rule to name each system's real mechanism or mark the claim unverified (for example SQS is pull).
+- A fallback for the study note without file tools (four-backtick fence), notes headings in the learner's language, and no `---`, `$` or bold in table cells.
+
+### Changed
+- The check and the mastery gate are one round: two questions, one at a time, no hints. "Passed" is said only after it.
+- Shaky list lifecycle defined: closed when answered correctly without a hint, parked items stay. The wrap-up lists concrete gaps only.
+- "I don't know" on the pretest leads straight to the block explanation. The "thank them" line is gone, it clashed with the no-praise rule.
+- Cards: up to 6 per passed block, never padded, one file per session.
+- Examples, README and docs synced: three blocks, a diagram in the composite-index block, no topic prefix, consistent shaky spots.
+
 ## [1.4.0] - 2026-11-16
 
 ### Added

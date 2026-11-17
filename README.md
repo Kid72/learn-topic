@@ -82,8 +82,8 @@ After you pass a block, the tutor offers cards. They come from your slips and he
 
 ```csv
 front,back,notes,tags
-"Postgres: why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","Learner's first answer was 'no idea'; reached it from one hint.","databases::indexes writes"
-"Postgres, index on (a, b): which filter column can use it alone?","Only a, the leading column; a filter on b alone usually cannot.","","databases::indexes composite"
+"Why does adding an index slow down INSERTs?","Each insert must also update every index on the table.","","databases::indexes writes"
+"A composite index on (a, b): which filter column can use it alone?","Only a, the leading column; a filter on b alone usually cannot.","","databases::indexes composite"
 ```
 
 A full file is in [examples/sample-cards.csv](examples/sample-cards.csv). Import steps: [docs/anki-import.md](docs/anki-import.md).

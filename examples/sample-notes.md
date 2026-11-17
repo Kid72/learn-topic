@@ -49,8 +49,8 @@ Partial indexes, which cover only some rows, are another way to cut index size (
 
 ## Shaky spots from this session
 
-- Write cost (idea 2): the first answer was "no idea"; one hint got you to "the value also goes into the index". Retry it from memory.
-- Composite order (idea 3): you made a guess in the session but did not check it on a real query. Test it with `EXPLAIN ANALYZE`.
+- Composite order (idea 3): your pretest guess was "probably not" with no reason. Explain from memory why a filter on the second column alone cannot use the index.
+- Reading EXPLAIN (idea 5): you have not yet checked an index on a real query. Test it with `EXPLAIN ANALYZE`.
 
 ## Self-test
 

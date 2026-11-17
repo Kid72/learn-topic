@@ -14,13 +14,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build skill zips
-        run: |
-          mkdir -p dist
-          cp -r skills/learn-topic dist/learn-topic
-          # claude.ai: the skill folder is the top level of the zip
-          (cd dist && zip -r ../learn-topic.zip learn-topic)
-          # Gemini app: SKILL.md sits at the root of the zip
-          (cd skills/learn-topic && zip -r ../../learn-topic-gemini.zip .)
+        run: scripts/build-zips.sh
 
       - name: Create GitHub release
         env:
