@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.5.0] - 2026-11-17
+
+The skill was too big (about 7,000 words, 5,000 of them in references that weaker models do not open). Now about 4,000.
+
+### Changed
+- `tutoring-rules.md` is gone. The rules that fixed real failures (rhythm, limits, answer checks, shaky list, gate, no leaks, accuracy, format bans) now live in `SKILL.md` once, so any client gets them without opening a file.
+- `session-flow.md`, `teaching-moves.md`, `visuals.md`, `anki-cards.md` and `study-notes.md` are cut by 30 to 80 percent: duplicated limits and rules, long examples and the interactive-visual spec are removed. No rule that fixed a failure was dropped.
+- The Gemini archive now inlines only the two file formats (`anki-cards.md`, `study-notes.md`), about 2,500 words instead of 7,000.
+
 ## [1.4.2] - 2026-11-17
 
 ### Changed
