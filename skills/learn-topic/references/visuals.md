@@ -43,29 +43,6 @@ If the environment can render interactive content (an artifact, a canvas, a widg
 - For an interactive visual, ask the learner for a prediction first. The turn still ends with its question or task, and the visual does not count toward the word limit.
 - Hints: on rung 1 show only a property of the problem. From rung 2, show the hinted technique on a tiny input. Never show the finished solution to an open check question.
 
-## What to show
+## Interactive version (only when it can render)
 
-| Moment | Visual |
-| :--- | :--- |
-| Introducing an idea | An analogy in motion, mapped to the real parts |
-| Teaching a mechanism | A step-by-step run on small concrete values, current state highlighted |
-| Comparing approaches | Panels side by side on one input, with shared counters |
-| Cost or scaling | Cost against input size, with a slider for the size |
-| After a wrong answer | Expected versus actual, on the learner's own input |
-
-## Interactive spec
-
-- An editable input with a sensible default, plus reset, step back, step forward, and a speed control.
-- The current element and the key invariant highlighted.
-- Counters for what matters here: comparisons, requests, bytes, milliseconds.
-- A one-line caption per step, in the learner's language.
-
-Request template:
-
-```text
-Build an interactive visualization of {process or structure} on the input {input}.
-Controls: step back, step forward, play with a speed slider, reset, editable input.
-Highlight {current element, pointers, invariant}. Show counters for {metrics}.
-Add a one-line caption under each step in {learner language}.
-Label states with text and shape, not only color.
-```
+Same diagram, built as an interactive visual: an editable input with a default, step back and forward, reset, the current element highlighted, counters for what matters (comparisons, requests, milliseconds), and a one-line caption per step in the learner's language. Moments that deserve one: a mechanism step by step on small values, approaches side by side on one input, cost against input size, and the learner's wrong answer against the expected one. Label states with text or shape, not only color.

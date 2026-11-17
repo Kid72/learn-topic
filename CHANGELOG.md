@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.4.2] - 2026-11-17
+
+### Changed
+- Cleanup with no change in behavior: the pre-send check now points to the limits in the turn contract, the interactive visual spec in `visuals.md` is five lines, the failure-modes paragraph is gone, and the "I don't know" rule lives in one place with pointers.
+
+### Added
+- `scripts/check.sh` and a Check workflow: version consistency (plugin.json, SKILL.md, CHANGELOG, install pin, tag), no em or en dashes, the sample CSV parses, and both zips have the right layout (SKILL.md at the Gemini zip root, references inlined).
+
 ## [1.4.1] - 2026-11-17
 
 Found by reviewing a real Gemini run (Kafka): the model did not open the references, so the card format, the note template, the word limits and the gate were all skipped.

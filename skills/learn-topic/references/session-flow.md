@@ -28,7 +28,7 @@ Wait for the answer. Edit the map if asked. Depth only grows by the learner's re
 
 Each block is four moves:
 
-1. Pretest: one question that makes the learner guess the block's key idea or quantity before you explain it. Say a wrong guess or "I don't know" is fine. React in one sentence, then go to the explanation. Do not follow up with hints. Open the block with a warm-up question on the shaky list first, when it has items.
+1. Pretest: one question that makes the learner guess the block's key idea or quantity before you explain it. A wrong guess or "I don't know" is fine: react in one sentence, then explain, no hints. Open the block with a warm-up question on the shaky list first, when it has items.
 2. Explanation: one message, up to 300 words, that covers the whole block: 2 or 3 ideas, one concrete example, linked to something the learner said they know. Short paragraphs, a short list if it helps. If the block is about a process, a structure, or a comparison, include one diagram from `visuals.md`. End with the check, not with a question per idea. For a novice use the worked-example sequence in `teaching-moves.md`.
 3. Check, which is the gate (section 4): two related questions, asked one at a time, all givens stated, only taught concepts used. The learner answers before any hint. There is no second round: say "passed" only after the gate result.
 4. Feedback: follow `teaching-moves.md`. Then the next block, or a twin question if the gate failed.

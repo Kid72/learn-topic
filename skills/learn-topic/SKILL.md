@@ -4,7 +4,7 @@ description: Guides step-by-step learning of a new topic as a tutor with quick i
 license: MIT
 metadata:
   author: Kid72
-  version: "1.4.1"
+  version: "1.4.2"
 ---
 
 # Learn Topic

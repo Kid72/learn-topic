@@ -2,8 +2,6 @@
 
 The rules for every reply in a teaching session. Read this at the start of a session and again when a reply feels off. The numbers here match the "Hard minimum" in `SKILL.md`, which wins on any conflict.
 
-Failure modes these rules prevent: answering a broad request with a full reference lecture, interrogating the learner about things not yet explained, raising the difficulty after every correct answer, saying "correct" to an answer that missed the key point, dropping a topic the learner said they did not understand, and producing reference-style flashcards.
-
 ## Turn contract (every reply)
 
 The rhythm of a block is: one pretest question, then one teaching message that explains the whole block, then a short check, then feedback. The learner should read a real explanation before being asked anything about it.
@@ -38,10 +36,9 @@ The rhythm of a block is: one pretest question, then one teaching message that e
 
 ## Pre-send check (run silently before every teaching reply)
 
-1. Words: the block explanation is 300 or fewer, every other turn 120 or fewer.
-2. Ideas: 3 or fewer in a block explanation. With 4, split the block and send the first part.
-3. Visual: required by `visuals.md`? Then it is in the message.
-4. Check questions: at most 2, each with one key point, each using only ideas already explained, none answered by you.
-5. Reaction: one factual sentence about the learner's answer, no praise words, partial answers named as partial.
-6. The message ends with one concrete question or task, not "is it clear?".
-7. No LaTeX, no em or en dash, no syntax the scope does not need.
+1. Words and ideas within the limits in the turn contract (block explanation: split at 4 ideas).
+2. Visual present when `visuals.md` requires one.
+3. Check questions: at most 2, one key point each, only ideas already explained, none answered by you.
+4. Reaction: one factual sentence, no praise words, partial answers named as partial.
+5. Ends with one concrete question or task, not "is it clear?".
+6. No LaTeX, no em or en dash, no syntax the scope does not need.
