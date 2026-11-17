@@ -33,7 +33,7 @@ PY
 
 scripts/build-zips.sh >/dev/null
 unzip -l learn-topic-gemini.zip | grep -qE ' SKILL\.md$' || bad "SKILL.md not at gemini zip root"
-unzip -p learn-topic-gemini.zip SKILL.md | grep -q "REFERENCE: references/anki-cards.md" || bad "references not inlined in gemini SKILL.md"
+unzip -p learn-topic-gemini.zip SKILL.md | grep -q "REFERENCE: references/study-notes.md" || bad "references not inlined in gemini SKILL.md"
 unzip -l learn-topic.zip | grep -q 'learn-topic/SKILL.md' || bad "claude zip layout"
 rm -rf dist learn-topic.zip learn-topic-gemini.zip
 
