@@ -1,6 +1,6 @@
 # Study notes for Notion
 
-Before writing the note: read this file, take the shaky list from the session for the "Shaky spots" section, include one running worked example if the topic has a path or process, write no LaTeX and no dashes, then run the pre-send check at the end.
+Before writing the note: read this file, take the shaky list from the session for the "Shaky spots" section, include one running worked example if the topic has a path or process, write no LaTeX and no em or en dashes (a plain hyphen is fine), then run the pre-send check at the end.
 
 A short Markdown note that covers the whole topic, so the learner can walk through it later and review by recall. It is a review tool, not a transcript and not a textbook chapter. This applies retrieval practice and spacing; the exact format is a design choice, not a proven layout.
 
@@ -12,14 +12,14 @@ A short Markdown note that covers the whole topic, so the learner can walk throu
 
 ## Symbols: no LaTeX, ever
 
-A note is pasted into Notion, which shows LaTeX source as raw text. Never write `$...$`, `$$...$$`, `\text{}`, `\approx`, `\rightarrow`, `\leftrightarrow`, or any backslash command. Write math and arrows as plain text or Unicode: `→`, `↔`, `≈`, `≤`, `≥`, `×`, `µs`, `ms`, `2^10`. A formula with units goes in inline code, for example `RTT = 150 ms`.
+A note is pasted into Notion, which shows LaTeX source as raw text. Never write a `$` at all (write money as "USD" or "5 USD"), so never `$...$`, `$$...$$`, `\text{}`, `\approx`, `\rightarrow`, `\leftrightarrow`, or any backslash command. Write math and arrows as plain text or Unicode: `→`, `↔`, `≈`, `≤`, `≥`, `×`, `µs`, `ms`, `2^10`. A formula with units goes in inline code, for example `RTT = 150 ms`.
 
 Bad: `$\approx 150 \text{ ms}$` and `SF $\leftrightarrow$ London`.
 Good: `≈ 150 ms` and `SF ↔ London`.
 
 ## What goes in, in this order
 
-1. Title: the topic, as a level 1 heading. Directly under it one line: "Cover the answers and try first. Feeling fluent while the answer is visible is not proof you know it."
+1. Title: the topic, as a level 1 heading, with no dash in it. Every heading and label of the note is in the learner's language (Overview, Key ideas, Worked example, Shaky spots, Self-test, Your turn, Review schedule, `Answer:`). Directly under it one line, translated: "Cover the answers and try first. Feeling fluent while the answer is visible is not proof you know it."
 2. Overview: 2 to 3 lines. What the topic is, the one big idea, how the main ideas connect. Not a list of section titles.
 3. Key ideas: 5 to 8 sections (design choice), each a level 3 heading naming one idea, followed by 1 to 4 short bullets. Use bullets for parallel facts and full sentences for causes ("X leads to Y because Z"). Define a term where it first appears. Add the relation to a neighbouring idea (depends on, causes, contrasts with).
 4. Worked example: at most one tiny example per technical idea, 5 lines or fewer, in a fenced code block with a language tag or in a short numbered list. Skip it for ideas that do not need one. Put a one-line caption right under it.
@@ -58,12 +58,12 @@ Use only: headings `#` to `###`; short paragraphs; `-` bullets and `1.` lists ne
 
 Use with care, and expect it may arrive as plain text but still read well: one pipe table of 3 columns or fewer; `- [ ]` for the review checklist only.
 
-Do not use (not verified to import; treat as forbidden): toggles and `<details>`, callouts and `> [!NOTE]`, `$` or `$$` math (put formulas in a code block), Mermaid, columns, HTML tags, footnotes, page mentions, anchor or relative links, images, a table mixed with HTML.
+Do not use (not verified to import; treat as forbidden): horizontal rules `---` (also between sections), bold or code inside table cells, `*` bullets (use `-`), toggles and `<details>`, callouts and `> [!NOTE]`, `$` or `$$` math (put formulas in a code block), Mermaid, columns, HTML tags, footnotes, page mentions, anchor or relative links, images, a table mixed with HTML.
 
 The format is designed to degrade gracefully. Do not say "works in Notion"; it has not been test-imported. Optional tip: in Notion the learner can select the answer lines and apply the toggle shortcut to hide them.
 
 ## File and message
 
-- Name: `<topic-slug>-notes.md`, lowercase with hyphens, in the same place as a cards file, for example `database-indexes-notes.md`.
-- Before sending, check: no `$` and no backslash anywhere; every key idea has a question; every question is followed by a blank line and an `Answer:` paragraph; the "Your turn" prompts are empty; no sentence is a repeat; no em dash or en dash.
+- Name: `<topic-slug>-notes.md`, lowercase Latin letters with hyphens (transliterate other scripts), in the same place as a cards file, for example `database-indexes-notes.md`. Without file tools, output the note in one fence of four backticks (the note contains its own code fences), then the message below.
+- Before sending, check: no `$`, no backslash, no `---` line anywhere; every heading translated; every key idea has a question; every question is followed by a blank line and an `Answer:` paragraph; the "Your turn" prompts are empty; no sentence is a repeat; no em dash or en dash.
 - After writing, one short message in the learner's language, which also ends with exactly one task. For example: "Saved `database-indexes-notes.md`, about 600 words. Import it via Settings, Import, Text & Markdown. Task for tomorrow: cover the answers and try every question first." A note file is an exception to the 120-word limit, like a cards file; the message itself stays within the limit.
