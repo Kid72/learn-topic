@@ -93,6 +93,15 @@ Simulations in Claude with an honest learner who answers truthfully and says so 
 
 Not covered by this measure: real Gemini behaviour. The owner runs a real Gemini session and sends it back.
 
+## Calls made after the builder check (my calls, for the owner to check)
+
+1. Word budget. The core `SKILL.md` may reach about 1,500 words, but only by cutting duplicated lines (limits and format rules are stated once). Gemini inlined text may reach about 4,200 words. Anything over that is cut, not argued for.
+2. Judgement mode "passed": every criterion met, or partly met with the learner fixing it after one follow-up. The one-question rule yields to the task's stated criteria (at most 4). The pretest is optional there. "Never state the answer" means never before the learner's attempt; after an attempt, or after a "you did not teach me", showing the model line or a worked example is required, not forbidden.
+3. Cards and note in judgement mode: cards take the criteria the learner missed and the mistakes from the shaky list (one idea each, same format); the note uses the worked example as its running example. Only content guidance is added to `anki-cards.md` and `study-notes.md`, the file formats do not change.
+4. Mixed topics (for example "Kafka for system design"): the mode is chosen per block, the intake line asks once if it is unclear, and the learner can switch.
+5. Simulations: I build and run them in this session with subagents (3 repeats, scenarios NFR, running an interview, Redis as regression). The scripts are not committed to the repo; results are reported to the owner with counts against 1.5.0.
+6. Version and commits: the version moves to 1.6.0 only when the change is built. Nothing is committed or pushed before the owner's explicit yes; commits are by Kid72 with no co-author line.
+
 ## Left to the builder
 
 Exact wording of the rules; the length of each worked example; the order of sections in `judgement-skills.md`; the wording of the intake line that picks the mode; extending `check.sh` (mode names present, inlined files present, no dashes).
