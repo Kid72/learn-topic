@@ -9,14 +9,14 @@ mkdir -p dist
 cp -r skills/learn-topic dist/learn-topic
 (cd dist && zip -qr ../learn-topic.zip learn-topic)
 
-# Gemini app: SKILL.md at the zip root, with the two file-format references inlined (the model may not open files)
+# Gemini app: SKILL.md at the zip root, with the flow and file-format references inlined (the model may not open files)
 mkdir -p dist/gemini
 cp -r skills/learn-topic/. dist/gemini/
 {
   cat skills/learn-topic/SKILL.md
   printf '\n\n# References (included here, so there is no need to open files)\n'
-  # only the file formats are inlined: the core rules already live in SKILL.md
-  for f in anki-cards study-notes; do
+  # inline the session flow and the two file formats; the core rules already live in SKILL.md
+  for f in session-flow anki-cards study-notes; do
     printf '\n\n## REFERENCE: references/%s.md\n\n' "$f"
     # demote the reference title so it does not clash with the SKILL.md title
     sed '1s/^# /### /' "skills/learn-topic/references/$f.md"

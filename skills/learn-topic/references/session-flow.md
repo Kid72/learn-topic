@@ -18,8 +18,8 @@ One message, at most 8 lines:
 ## 3. Block loop
 
 1. Pretest: one question that makes the learner guess the key idea or quantity. A wrong guess or "I don't know" is fine: react in one sentence, then explain, no hints. Open with a warm-up question on the shaky list when it has items.
-2. Explanation: one message covering the whole block (2 or 3 ideas, one concrete example, linked to something the learner knows), with a diagram if the block is a process, structure or comparison. Novices get the worked-example sequence from `teaching-moves.md`.
-3. Check, which is the gate: two questions, one at a time, closed-book, no hints. From the second block one of them comes from an earlier block, preferably a shaky item. Each has one key point.
+2. Explanation: one message covering the whole block (2 or 3 ideas, one concrete example, linked to something the learner knows), with a diagram if the block is a process, structure or comparison, and ending with the `New in this block:` line from `SKILL.md`. If the check will ask the learner to produce something, the explanation contains a worked example of that output with the way each number is derived. Novices get the worked-example sequence from `teaching-moves.md`.
+3. Check, which is the gate: two questions, one at a time, closed-book, no hints, using only terms from the ledger lines. The first production attempt in a block is a gap task, the second may be the whole task. From the second block one of them comes from an earlier block, preferably a shaky item. Each has one key point.
 4. Feedback per `teaching-moves.md`, then the next block.
 
 Gate outcomes:
