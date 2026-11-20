@@ -33,8 +33,13 @@ PY
 
 scripts/build-zips.sh >/dev/null
 unzip -l learn-topic-gemini.zip | grep -qE ' SKILL\.md$' || bad "SKILL.md not at gemini zip root"
-unzip -p learn-topic-gemini.zip SKILL.md | grep -q "REFERENCE: references/study-notes.md" || bad "references not inlined in gemini SKILL.md"
+unzip -p learn-topic-gemini.zip SKILL.md | grep -q "REFERENCE: references/session-flow.md" || bad "references not inlined in gemini SKILL.md"
 unzip -l learn-topic.zip | grep -q 'learn-topic/SKILL.md' || bad "claude zip layout"
+core_words=$(wc -w < skills/learn-topic/SKILL.md | tr -d ' ')
+[ "$core_words" -le 1500 ] || bad "SKILL.md has $core_words words, budget 1500"
+bundle_words=$(unzip -p learn-topic-gemini.zip SKILL.md | wc -w | tr -d ' ')
+[ "$bundle_words" -le 4300 ] || bad "Gemini bundle has $bundle_words words, budget 4300"
+echo "core $core_words words, gemini bundle $bundle_words words"
 rm -rf dist learn-topic.zip learn-topic-gemini.zip
 
 [ "$fail" = 0 ] && echo "all checks passed" || exit 1

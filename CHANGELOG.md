@@ -2,6 +2,21 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.6.0] - 2026-11-20
+
+Found by replaying real Gemini failures (NFR, system design): the tutor asked the learner to produce things it had not taught ("formulate NFRs with p99, consistency, durability"), and the learner rightly said "you did not teach me".
+
+### Added
+- "Teach before you ask" in `SKILL.md`: every block ends with a visible line `New in this block:` (terms with one-line definitions); a question may use only those terms and earlier ones. Before a production task (write, formulate, choose, design) the block shows a worked example with the way each number is derived, marked as a heuristic. The first attempt is a task with one gap. The model answer is shown after the attempt.
+- Recovery rule: "you did not teach me" is a tutor error, answered with a worked example and a gap task, never a lecture or a dropped check.
+- The map rules (at most 8 lines, 6 words per block line, out of scope, "Go with this, or adjust?") are in `SKILL.md`, and the Gemini archive now inlines `session-flow.md` too.
+- Rules for pasted material from another tutor and for a structure the learner sets.
+- Word budgets in `scripts/check.sh`: core up to 1,500 words, Gemini bundle up to 4,300.
+
+### Changed
+- Worked-example fading is the default for any production task, not only for novices.
+- Without file tools the tutor prints the content and never says "saved".
+
 ## [1.5.0] - 2026-11-17
 
 The skill was too big (about 7,000 words, 5,000 of them in references that weaker models do not open). Now about 4,000.

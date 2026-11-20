@@ -22,9 +22,9 @@ At most two rungs before the full answer.
 - "Just tell me the answer": the answer in up to 120 words, then a twin task with different numbers.
 - Frustration: shrink the step so the next task is solvable.
 
-## Worked-example fading (novices only)
+## Worked-example fading (default for any production task)
 
-1. A fully worked example with the reasoning, up to 200 words. 2. The same structure with one key step blank. 3. A full task with different surface features. Experts skip straight to tasks.
+1. A fully worked example with the reasoning, up to 200 words. 2. The same structure with one key step blank. 3. A full task with different surface features. Skip step 1 only for a format the learner has already produced correctly in this session.
 
 ## Practice design
 
